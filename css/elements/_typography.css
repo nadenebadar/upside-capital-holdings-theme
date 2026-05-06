@@ -1,0 +1,138 @@
+/* The overflow-wrap is meant to prevent long/large words from breaking the mobile responsiveness of a page (e.g. horizontal scrolling). It is preferred to reduce font sizes on mobile to address this, with this CSS specifically helping with extreme scenarios where a reduction in font size is not possible. */
+html{
+  font-size: 16px;
+}
+body {
+  line-height: 1.4;
+  overflow-wrap: break-word;
+}
+
+/* Handles word breaking for a few specific languages which handle breaks in words differently. If your content is not translated into these languages, you can safely remove this.  */
+
+html[lang^="ja"] body,
+html[lang^="zh"] body,
+html[lang^="ko"] body {
+  line-break: strict;
+  overflow-wrap: normal;
+  word-break: break-all;
+}
+
+/* Paragraphs */
+
+p {
+  font-size: 1rem;
+  margin: 0 0 1.4rem;
+}
+
+/* Anchors */
+
+a {
+  cursor: pointer;
+}
+
+/* Headings */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 1.4rem;
+}
+
+/* Lists */
+
+ul,
+ol {
+  margin: 0 0 1.4rem;
+}
+
+ul ul,
+ol ul,
+ul ol,
+ol ol {
+  margin: 0;
+}
+
+ul.no-list {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+/* Code blocks */
+
+pre {
+  overflow: auto;
+}
+
+code {
+  vertical-align: bottom;
+}
+
+/* Blockquotes */
+
+blockquote {
+  border-left: 2px solid;
+  margin: 0 0 1.4rem;
+  padding-left: 0.7rem;
+}
+
+/* Horizontal rules */
+
+hr {
+  border: none;
+  border-bottom: 1px solid #CCC;
+}
+
+/* Image alt text */
+
+img {
+  font-size: 0.583rem;
+  word-break: normal;
+}
+
+/* Colour Classes */
+.font-color-p {
+  color: var(--color-p);
+}
+.font-color-s {
+  color: var(--color-s);
+}
+.font-color-t {
+  color: var(--color-t);
+}
+
+.font-color-white{
+  color: var(--color-white);
+}
+.font-color-black{
+  color: var(--color-black);
+}
+.font-color-grey{
+  color: var(--color-grey);
+}
+.font-color-w-grey{
+  color: var(--color-w-grey);
+}
+
+
+.font-regular {
+  font-weight: 400;
+}
+.font-medium {
+  font-weight: 500;
+}
+.font-semibold {
+  font-weight: 600;
+}
+.font-bold {  
+  font-weight: 700;
+}
+.font-boldest {  
+  font-weight: 800;
+}
+.font-black {  
+  font-weight: 900;
+}

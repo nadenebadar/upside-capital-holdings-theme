@@ -1,0 +1,52 @@
+.footer--logo,
+.footer--copy {
+    max-width: 250px;
+}
+.footer--copy {
+    color: var(--color-w-grey);
+    font-size: 0.75rem;
+    line-height: 2;
+    letter-spacing: 0.025em;
+}
+.footer--menu .hs-menu-wrapper ul {
+    display: block;
+}
+.footer--menu .hs-menu-wrapper ul li + li{
+    margin-top: var(--space-3);
+}
+.footer--title, .footer--menu .hs-menu-wrapper ul li a,
+.footer--contact {
+    font-size: 0.75rem;
+    line-height: 1rem;
+    text-transform: uppercase;
+    
+}
+.footer--contact{
+    line-height: 2;
+}
+.footer--title{
+    font-weight: 700;
+    letter-spacing: 0.2em;
+}
+.footer--menu .hs-menu-wrapper ul li a, .footer--email a,
+.footer--bottom--menu .hs-menu-wrapper ul li a{
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    color: var(--color-w-grey);
+}
+.footer--menu .hs-menu-wrapper ul li a:hover,
+.footer--email a:hover,
+.footer--bottom--menu .hs-menu-wrapper ul li a:hover{
+    color: var(--color-s);
+}
+.footer--bottom {
+    padding-top: 4rem;
+    border-top: 1px solid #1e293b;
+    margin-top: 4rem;
+}
+.footer--bottom {
+    color: var(--color-w-grey);
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}

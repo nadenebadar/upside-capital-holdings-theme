@@ -1,0 +1,34 @@
+.content-wrapper {
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+@media screen and (min-width: 1380px) {
+  .content-wrapper {
+    padding: 0;
+  }
+}
+
+.dnd-section > .row-fluid {
+  margin: 0 auto;
+}
+
+.dnd-section .dnd-column {
+  padding: 0 1rem;
+}
+
+@media (max-width: 767px) {
+  .dnd-section .dnd-column {
+    padding: 0;
+  }
+}
+
+
+.remove-dnd-styles.dnd-section {
+  background: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.remove-dnd-styles.dnd-section > .row-fluid {
+  max-width: 100% !important;
+}

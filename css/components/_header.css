@@ -1,0 +1,55 @@
+.header{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 999
+}
+
+/* Navigation skipper */
+
+.header__skip {
+  height: 1px;
+  left: -1000px;
+  overflow: hidden;
+  position: absolute;
+  text-align: left;
+  top: -1000px;
+  width: 1px;
+}
+
+.header__skip:hover,
+.header__skip:focus,
+.header__skip:active {
+  height: auto;
+  left: 0;
+  overflow: visible;
+  top: 0;
+  width: auto;
+}
+
+/* Logo */
+
+.header__logo {
+  align-items: center;
+  display: flex;
+  height: auto;
+  max-width: 250px;
+  overflow: hidden;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+@media (max-width: 767px) {
+  .header__logo {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+
+.header__logo img {
+  max-width: 100%;
+}
+.header__logo #hs_cos_wrapper_site_logo{
+  line-height: 0;
+}
+/* Navigation */

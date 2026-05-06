@@ -1,0 +1,21 @@
+.home-banner{
+    min-height: 100vh;
+    position: relative;
+}
+.home-banner--gradient, .home-banner--bg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.home-banner--bg{
+    opacity: 0.6;
+}
+.home-banner--content{
+    position: relative;
+    max-width: 64rem;
+}
+.home-banner--copy{
+    max-width: 42rem;
+}

@@ -1,0 +1,70 @@
+{% require_css %}
+    <style>
+    {% scope_css %}
+    .home-banner--bg{
+        {{ module.style.backgroundimage_field.css }}
+    }
+    .home-banner h1{
+        {% if module.style.heading.color_field.color %}
+        color: rgba({{ module.style.heading.color_field.color|convert_rgb }},{{ module.style.heading.color_field.opacity/100 }});
+        {% endif %}
+    }
+    .home-banner h1 span{
+        {% if module.style.heading.highlight_color.color %}
+        color: rgba({{ module.style.heading.highlight_color.color|convert_rgb }},{{ module.style.heading.highlight_color.opacity/100 }});
+        {% endif %}
+    }
+    .home-banner--gradient{
+        {% if module.style.background_gradient_color.color %}
+            background-image: linear-gradient(to top right, #000f1e , rgba({{ module.style.background_gradient_color.color|convert_rgb }},{{ module.style.background_gradient_color.opacity/100 }}) , transparent)
+        {% endif %}
+    }
+    .home-banner--copy{
+        {% if module.style.copy_color.color %}
+        color: rgba({{ module.style.copy_color.color|convert_rgb }},{{ module.style.copy_color.opacity/100 }});
+        {% endif %}
+    }
+    {% end_scope_css %}
+    </style>
+{% end_require_css %}
+
+<div class="home-banner d-flex flex-column justify-content-center pt-lg pb-lg bg-color-{{ module.style.background_color }}" >
+    <div class="home-banner--bg"></div>
+    <div class="home-banner--gradient"></div>
+    <div class="container">
+        <div class="home-banner--content">
+            <h1 class="mb-8">
+                {{ module.header }}
+            </h1>
+            <div class="h5 home-banner--copy">
+                {{ module.copy }}
+            </div>
+            {% if module.button.text %}
+            <div class="home-banner--cta">
+                {% set href = module.button.link_field.url.href %}
+                {% if module.button.link_field.url.type is equalto "EMAIL_ADDRESS" %}
+                {% set href = "mailto:" + href %}
+                {% elif module.button.link_field.url.type is equalto "PHONE_NUMBER" %}
+                {% set href = "tel:" + href %}
+                {% endif %}
+                <a
+                {% if module.button.link_field.url.type is equalto "CALL_TO_ACTION"  %}
+                    href="{{ href }}" {# The href here is not escaped as it is not editable and functions as a JavaScript call to the associated CTA #}
+                {% else %}
+                    href="{{ href|escape_url }}"
+                {% endif %}
+                {% if module.button.link_field.open_in_new_tab %}
+                    target="_blank"
+                {% endif %}
+                {% if module.button.link_field.rel %}
+                    rel="{{ module.button.link_field.rel|escape_attr }}"
+                {% endif %}
+                class="button button--{{ module.style.button_color }} mt-5"
+                >
+                 {{ module.button.text }}
+                </a>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</div>

@@ -1,0 +1,36 @@
+{% set titleColor = 'white' %}
+{% set copyColor =  'w-grey' %}
+{% set numberColor = 's' %}
+<div class="stages-mod cards-mod bg-color-{{ module.style.background_color }} {{ module.style.padding_top }} {{ module.style.padding_bottom }}">
+    <div class="container">
+        <div class="grid grid--2">
+            <div class="stages-mod--intro">
+                <h2 class="mb-12 font-color-{{ titleColor }}">
+                    {{ module.heading }}
+                </h2>
+                <div class="font-color-{{ copyColor }} h5">
+                {{ module.copy }}
+                </div>
+            </div>
+            <div class="stages-mod--items">
+                {% for item in module.cards %}
+                    <div class="stages-mod--item d-flex {% if not loop.first %}mt-12{% endif %}">
+                        <div class="number font-color-{{ numberColor }}">
+                            {% if loop.index < 10 %}
+                                0{{ loop.index }}
+                            {% else %}
+                                {{ loop.index }}
+                            {% endif %}
+                        </div>
+                        <div class="info font-color-{{ copyColor }}">
+                            <h5 class="mb-2 font-color-{{ titleColor }} font-black">
+                                {{ item.title }}
+                            </h5>
+                            {{ item.description }}
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>

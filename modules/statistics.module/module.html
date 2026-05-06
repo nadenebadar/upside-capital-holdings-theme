@@ -1,0 +1,26 @@
+
+{% set numColor = 'black' %}
+{% set titleColor = 's' %}
+{% if module.style.background_color == "p" %}
+    {% set numColor = 'white' %}
+{% elif module.style.background_color == "s" %}
+    {% set titleColor = 'p' %}
+    {% set numColor = 'white' %}
+{% endif %}
+<div class="statistics-mod bg-color-{{ module.style.background_color }} {{ module.style.padding_top }} {{ module.style.padding_bottom }}">
+    <div class="container">
+        <div class="grid grid--4">
+            {% for item in module.statistics %}
+                <div class="statistics--item">
+                    <div class="statistics--number h2 font-color-{{ numColor }}">
+                        {{ item.prefix }}<span>{{ item.number_field }}</span>{{ item.suffix }}
+                    </div>
+                    <div class="statistics--title h6 font-color-{{ titleColor }} mt-2">
+                        {{ item.title }}
+                    </div>
+                </div>                
+            {% endfor %}
+        </div>
+        
+    </div>
+</div>

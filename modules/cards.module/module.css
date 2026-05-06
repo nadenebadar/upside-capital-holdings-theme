@@ -1,0 +1,58 @@
+.cards-mod .cards-mod--heading{
+    position: relative;
+    margin-bottom: 5rem;
+}
+.cards-mod .cards-mod--heading::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 6rem;
+    height: 0.25rem;
+    background: var(--color-s);
+}
+.cards-mod .image-cover {
+    overflow: hidden;
+    padding-top: 65%;
+    position: relative;
+}
+.cards-mod .image-cover::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: var(--color-black);
+    opacity: 0.2;
+    transition-duration: 500ms;
+}
+.cards-mod .cards-mod--item:hover .image-cover::after{
+    opacity: 0.4;
+}
+.cards-mod .image-cover > img {
+    position: absolute;
+    top: 0;
+    width: 110%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    transition-duration: 700ms; 
+    left: 50%;
+    transform: translateX(-50%);
+}
+.cards-mod .cards-mod--item:hover .image-cover > img{
+    transform: translate(-50%,0) rotate(0) skewX(0) skewY(0) scaleX(1.05) scaleY(1.05)
+}
+.cards-mod .cards-mod--desc {
+    padding: var(--space-10);
+}
+.cards-mod .cards-mod--desc .button--link{
+    opacity: 0;
+}
+.cards-mod .cards-mod--item:hover .button--link{
+    opacity: 1;
+}
+.cards-mod .cards-mod--item:nth-child(even) {
+    background: var(--color-n);
+}

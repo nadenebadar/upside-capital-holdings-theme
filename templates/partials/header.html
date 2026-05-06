@@ -1,0 +1,45 @@
+<!--
+  templateType: global_partial
+  label: Website header
+-->
+<header class="header">
+  {# The link below is used for a navigation skipper which allows users navigating the site with their keyboard to skip over the site navigation. More information on the navigation skipper can be found here: https://github.com/HubSpot/cms-theme-boilerplate/wiki/Accessibility #}
+  <a href="#main-content" class="header__skip">Skip to content</a>
+  <div class="container">
+    {# Header logo column #}
+    <div class="row justify-content-between align-items-center">
+      <div class="col-auto">
+        <nav class="header__logo header__logo--main">
+          {% module "site_logo"
+            path="@hubspot/logo"
+            img={
+              "loading": "eager"
+            }
+          %}
+        </nav>
+      </div>
+      
+
+      {# Header navigation column #}
+      <div class="col-auto">
+        <div class="header__megamenu">
+          {% module "menu_navigation"
+            path="@hubspot/menu"
+          %}
+        </div>
+      </div>
+
+      <div class="col-auto">
+        <div class="header__button">
+          {% module "header_button_text" path="@hubspot/text", label="Header Button Text", value="Investor Login", export_to_template_context=True %}
+          {% module "header_button_link" path="@hubspot/text", label="#", export_to_template_context=True %}
+          <a href="{{ widget_data.header_button_link.value }}" class="button button--neutral">
+            {{ widget_data.header_button_text.value }}
+          </a>
+        </div>
+      </div>
+      
+    </div> 
+
+  </div>
+</header>

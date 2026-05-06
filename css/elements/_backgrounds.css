@@ -1,0 +1,36 @@
+/** Primary **/
+.bg-color-p {
+    background-color: var(--color-p) ;
+}
+/** Secondary **/
+.bg-color-s {
+    background-color: var(--color-s) ;
+}
+/** Tertiary **/
+.bg-color-t {
+    background-color: var(--color-t) ;
+}
+/** Neutral **/
+.bg-color-n {
+    background-color: var(--color-n) ;
+}
+/** Black **/
+.bg-color-n-dark {
+    background-color: var(--color-black) ;
+}
+/** White **/
+.bg-color-n-white {
+    background-color: var(--color-white) ;
+}
+/** Grey **/
+.bg-color-grey {
+    background-color: var(--color-grey) ;
+}
+/** Warm Grey Dark **/
+.bg-color-w-grey-dark {
+    background-color: var(--color-w-grey-dark) ;
+}
+/** Warm Grey **/
+.bg-color-w-grey {
+    background-color: var(--color-w-grey) ;
+}

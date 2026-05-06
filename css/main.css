@@ -1,0 +1,73 @@
+/* Theme base styles */
+/*=================
+  1. Root Variables
+=================*/
+
+:root {
+  --color-p: {{theme.global_colors.primary.color}};
+  --color-s: {{theme.global_colors.secondary.color}};
+  --color-t: {{theme.global_colors.tertiary.color}};
+  --color-n: {{theme.global_colors.neutral.color}};
+  --color-black: #000f1e;
+  --color-white: #FFFFFF;
+  --color-grey: #5C5C5C;
+  --color-w-grey-dark: #E7E1D5;
+  --color-w-grey: #94a3b8;
+
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-7: 1.75rem;
+  --space-8: 2rem;
+  --space-9: 2.25rem;
+  --space-10: 2.5rem;
+  --space-11: 2.75rem;
+  --space-12: 3rem;
+}
+
+/* Tools
+Any animations, or functions used throughout the project.
+Note: _macros.css needs to be imported into each stylesheet where macros are used and not included here
+*/
+
+/* Generic
+This is where reset, normalize & box-sizing styles go.
+*/
+
+{% include './generic/_reset.css' %}
+{% include './generic/_normalize.css' %}
+
+/* Objects
+Non-cosmetic design patterns including grid and layout classes)
+*/
+
+{% include './objects/_layout.css' %}
+{% include './objects/_containers-dnd.css' %}
+{% include './objects/_bootstrap-grid.css' %}
+
+/* Elements
+Base HTML elements are styled in this section (<body>, <h1>, <a>, <p>, <button> etc.)
+*/
+
+{% include './elements/_typography.css' %}
+{% include './elements/_buttons.css' %}
+{% include './elements/_forms.css' %}
+{% include './elements/_tables.css' %}
+{% include './elements/_spacing.css' %}
+{% include './elements/_backgrounds.css' %}
+
+/* Components
+Specific pieces of UI that are stylized. Typically used for global partial styling
+*/
+
+{% include './components/_header.css' %}
+{% include './components/_default-modules.css' %}
+
+/* Utilities
+Helper classes with ability to override anything that comes before it
+*/
+
+{% include './utilities/_helper.css' %}

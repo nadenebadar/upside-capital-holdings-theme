@@ -1,0 +1,17 @@
+.stages-mod .stages-mod--item{
+    gap: 2rem;
+}
+.stages-mod .stages-mod--item .number {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    font-weight: 900;
+}
+.stages-mod .stages-mod--item .info h5 {
+    text-transform: uppercase;
+}
+@media screen and (min-width: 992px){
+
+    .stages-mod .grid{
+        gap: 6rem;
+    }
+}

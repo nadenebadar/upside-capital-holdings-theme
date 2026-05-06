@@ -1,0 +1,91 @@
+<div class="footer-content pt-reg pb-reg">
+    <div class="container">
+        <div class="footer--top">
+            <div class="row justify-content-between">
+                <div class="col-md-auto">
+                    <div class="footer--logo">
+                        {% set loadingAttr = module.logo_field.loading != 'disabled' ? '{{ module.logo_field.loading }}' : '' %}
+
+                        {% logo
+                            override_inherited_src="{{ module.logo_field.override_inherited_src }}"
+                            src="{{ module.logo_field.src }}"
+                            alt="{{ module.logo_field.alt }}"
+                            width="{{ module.logo_field.width }}"
+                            height="{{ module.logo_field.height }}"
+                            loading="{{ loadingAttr }}"
+                            suppress_company_name="{{ module.logo_field.suppress_company_name }}"
+                        %}
+                    </div>
+
+                    {% if module.copy %}
+                    <div class="footer--copy">
+                        {{ module.copy }}
+                    </div>
+                    {% endif %}
+                </div>
+
+                {% for item in module.menu %}
+                <div class="col-md-auto">
+                    <div class="footer--title mb-6">
+                        {{ item.title }}
+                    </div>
+                    <div class="footer--menu">
+                        {% menu id="{{ item.menu_field }}" %}
+                    </div>
+                </div>
+                {% endfor %}
+
+                <div class="col-md-auto">
+                    <div class="footer--title mb-6">
+                        {{ module.contact.title }}
+                    </div>
+                    <div class="footer--contact font-color-w-grey">
+                        <div class="footer--address">
+                            {{ module.contact.address }}
+                        </div>
+                        {% if module.contact.email.url.href %}
+                        <div class="footer--email">
+                            {% set href = module.contact.email.url.href %}
+                            {% if module.contact.email.url.type is equalto "EMAIL_ADDRESS" %}
+                            {% set href = "mailto:" + href %}
+                            {% elif module.contact.email.url.type is equalto "PHONE_NUMBER" %}
+                            {% set href = "tel:" + href %}
+                            {% endif %}
+                            <a
+                            {% if module.contact.email.url.type is equalto "CALL_TO_ACTION"  %}
+                                href="{{ href }}" {# The href here is not escaped as it is not editable and functions as a JavaScript call to the associated CTA #}
+                            {% else %}
+                                href="{{ href|escape_url }}"
+                            {% endif %}
+                            {% if module.contact.email.open_in_new_tab %}
+                                target="_blank"
+                            {% endif %}
+                            {% if module.contact.email.rel %}
+                                rel="{{ module.contact.email.rel|escape_attr }}"
+                            {% endif %}
+                            >
+                            {{ module.contact.email.url.href }}
+                            </a>
+                        </div>
+                        {% endif %}
+                    </div>
+                    
+                </div>
+
+            </div>
+        </div>
+        <div class="footer--bottom">
+            <div class="row justify-content-between">
+                <div class="col-md-auto">
+                    {{ module.copyright }}
+                </div>
+                <div class="col-md-auto">
+                    <div class="footer--bottom--menu">
+                        {% menu id="{{ module.bottom_menu }}" %}
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>

@@ -1,0 +1,269 @@
+[ {
+  "id" : "abd9d83c-1fe4-4c6d-2efd-0ad2d8a1a7b1",
+  "name" : "logo_field",
+  "label" : "Logo",
+  "required" : false,
+  "locked" : false,
+  "show_loading" : false,
+  "display_width" : null,
+  "type" : "logo",
+  "default" : {
+    "override_inherited_src" : false,
+    "src" : null,
+    "alt" : null
+  }
+}, {
+  "id" : "4106f2a2-2fd8-f5a2-6c49-df27a3ad4760",
+  "name" : "copy",
+  "label" : "Copy",
+  "required" : false,
+  "locked" : false,
+  "display_width" : null,
+  "type" : "richtext"
+}, {
+  "id" : "55383d66-a17b-565e-f399-c43301cba568",
+  "name" : "menu",
+  "label" : "Menu",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : "6d6b4e17-554c-c9a2-90da-415dd563bf97",
+    "default" : 2
+  },
+  "children" : [ {
+    "id" : "6d6b4e17-554c-c9a2-90da-415dd563bf97",
+    "name" : "title",
+    "label" : "Title",
+    "required" : false,
+    "locked" : false,
+    "allow_new_line" : false,
+    "display_width" : null,
+    "type" : "text",
+    "default" : "Global Platforms"
+  }, {
+    "id" : "827bc480-ae14-922a-a1bf-8cf8d586e866",
+    "name" : "menu_field",
+    "label" : "Menu",
+    "required" : false,
+    "locked" : false,
+    "display_width" : null,
+    "type" : "menu",
+    "default" : 341450639071
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "display_width" : null,
+  "type" : "group",
+  "default" : [ {
+    "title" : "Global Platforms",
+    "menu_field" : 341450639071
+  }, {
+    "title" : "Global Platforms",
+    "menu_field" : 341450639071
+  } ]
+}, {
+  "id" : "20adf7f1-04e8-fe96-1032-0fd4f7355174",
+  "name" : "contact",
+  "label" : "Contact",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "2738062e-75e8-123f-76e1-0be09b981771",
+    "name" : "title",
+    "label" : "Title",
+    "required" : false,
+    "locked" : false,
+    "allow_new_line" : false,
+    "display_width" : null,
+    "type" : "text",
+    "default" : "Contact"
+  }, {
+    "id" : "fda385bf-bde8-f47b-ad23-daee52cee391",
+    "name" : "address",
+    "label" : "Address",
+    "required" : false,
+    "locked" : false,
+    "allow_new_line" : false,
+    "display_width" : null,
+    "type" : "text",
+    "default" : "Two World Trade Center<br>Floor 88<br>New York, NY 10007"
+  }, {
+    "id" : "5e3f4f20-b0b4-2c86-25ab-c1267a66b9af",
+    "name" : "email",
+    "label" : "Email",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EMAIL_ADDRESS" ],
+    "show_advanced_rel_options" : false,
+    "display_width" : null,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "href" : "info@upsidecapitalholdings.com",
+        "type" : "EMAIL_ADDRESS"
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "8446bcad-0a0a-bf0b-f07e-b479867c6d15",
+    "name" : "social_media",
+    "label" : "Social Media",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : null,
+      "max" : null,
+      "sorting_label_field" : null,
+      "default" : 3
+    },
+    "children" : [ {
+      "id" : "4b105331-2259-9513-387d-bd43d2aa8b2e",
+      "name" : "social_media",
+      "label" : "Icon",
+      "required" : false,
+      "locked" : false,
+      "display" : "select",
+      "choices" : [ [ "fb", "Facebook" ], [ "linkedin", "LinkedIn" ], [ "instagram", "Instagram" ] ],
+      "multiple" : false,
+      "reordering_enabled" : true,
+      "preset" : null,
+      "display_width" : null,
+      "type" : "choice",
+      "default" : "fb"
+    }, {
+      "id" : "6bbfc800-9db6-18ae-6880-fa367f8f4e1e",
+      "name" : "link_field",
+      "label" : "Link",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER", "PAYMENT" ],
+      "show_advanced_rel_options" : false,
+      "display_width" : null,
+      "type" : "link",
+      "default" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "display_width" : null,
+    "type" : "group",
+    "default" : [ {
+      "social_media" : "fb",
+      "link_field" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "social_media" : "fb",
+      "link_field" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "social_media" : "fb",
+      "link_field" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    } ]
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "display_width" : null,
+  "type" : "group",
+  "default" : {
+    "title" : "Contact",
+    "address" : "Two World Trade Center<br>Floor 88<br>New York, NY 10007",
+    "email" : {
+      "url" : {
+        "content_id" : null,
+        "href" : "info@upsidecapitalholdings.com",
+        "type" : "EMAIL_ADDRESS"
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "social_media" : [ {
+      "social_media" : "fb",
+      "link_field" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "social_media" : "fb",
+      "link_field" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "social_media" : "fb",
+      "link_field" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    } ]
+  }
+}, {
+  "id" : "f729ba88-ccc0-bb16-29e0-644fbe479003",
+  "name" : "copyright",
+  "label" : "Copyright",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "© {{ year }} Upside Capital Holdings. All rights reserved."
+}, {
+  "id" : "c92cb718-e142-56fc-a08b-598124662c52",
+  "name" : "bottom_menu",
+  "label" : "Bottom Menu",
+  "required" : false,
+  "locked" : false,
+  "display_width" : null,
+  "type" : "menu",
+  "default" : 341450639091
+} ]

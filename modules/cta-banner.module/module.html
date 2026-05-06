@@ -1,0 +1,49 @@
+{% set titleColor = 'white' %}
+{% set copyColor =  'w-grey' %}
+{% require_css %}
+    <style>
+        {% scope_css %}
+            .cta-banner{
+                {{ module.style.backgroundimage_field.css }}
+            }
+        {% end_scope_css %}
+    </style>
+{% end_require_css %}
+<div class="cta-banner bg-color-{{ module.style.background_color }} {{ module.style.padding_top }} {{ module.style.padding_bottom }}">
+    <div class="container">
+        <div class="cta-banner--content">
+            <h2 class="mb-8 font-color-{{ titleColor }}">
+                {{ module.heading }}
+            </h2>
+            <div class="font-color-{{ copyColor }} h5 cta-banner--copy mb-12">
+            {{ module.copy }}
+            </div>
+            {% if module.button.text %}
+            <div>
+                {% set href = module.button.link_field.url.href %}
+                {% if module.button.link_field.url.type is equalto "EMAIL_ADDRESS" %}
+                {% set href = "mailto:" + href %}
+                {% elif module.button.link_field.url.type is equalto "PHONE_NUMBER" %}
+                {% set href = "tel:" + href %}
+                {% endif %}
+                <a
+                {% if module.button.link_field.url.type is equalto "CALL_TO_ACTION"  %}
+                    href="{{ href }}" {# The href here is not escaped as it is not editable and functions as a JavaScript call to the associated CTA #}
+                {% else %}
+                    href="{{ href|escape_url }}"
+                {% endif %}
+                {% if module.button.link_field.open_in_new_tab %}
+                    target="_blank"
+                {% endif %}
+                {% if module.button.link_field.rel %}
+                    rel="{{ module.button.link_field.rel|escape_attr }}"
+                {% endif %}
+                class="button {{ module.style.button_color }}"
+                >
+                {{ module.button.text }}
+                </a>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</div>

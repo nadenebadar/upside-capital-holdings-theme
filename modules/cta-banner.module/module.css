@@ -1,0 +1,45 @@
+.cta-banner{
+    text-align: center;
+    position: relative;
+}
+.cta-banner .cta-banner--content {
+    max-width: 56rem;
+    margin: 0 auto;
+    position: relative;
+}
+.cta-banner .cta-banner--content h2{
+    font-size: 3rem;
+    line-height: 1;
+    letter-spacing: -0.025em;
+}
+.cta-banner .cta-banner--copy{
+    max-width: 42rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.cta-banner::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.8;
+}
+.cta-banner.bg-color-p.cta-banner::before{
+    background-color: var(--color-p);
+}
+.cta-banner.bg-color-s.cta-banner::before{
+    background-color: var(--color-s);
+}
+.cta-banner.bg-color-t.cta-banner::before{
+    background-color: var(--color-t);
+}
+.cta-banner.bg-color-n.cta-banner::before{
+    background-color: var(--color-n);
+}
+@media screen and (min-width: 768px){
+    .cta-banner .cta-banner--content h2{
+        font-size: 4.5rem;
+    }
+}

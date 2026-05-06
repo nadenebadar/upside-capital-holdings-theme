@@ -1,0 +1,129 @@
+[ {
+  "id" : "4c0e9970-41bf-5511-f38d-7a19c93f1fcb",
+  "name" : "style",
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "b4fba23f-c5d2-0442-62e5-ccd97a4e4bb4",
+    "name" : "background_color",
+    "label" : "Background Color",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "p", "Primary" ], [ "s", "Secondary" ], [ "t", "Tertiary" ], [ "n", "Neutral" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "display_width" : null,
+    "type" : "choice",
+    "default" : "p"
+  }, {
+    "id" : "a7bcf196-2ad7-832f-9a74-897a7283dee0",
+    "name" : "padding_top",
+    "label" : "Padding Top",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "pt-reg", "Regular" ], [ "pt-lg", "Large" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "display_width" : null,
+    "type" : "choice",
+    "default" : "pt-reg"
+  }, {
+    "id" : "d9981fb6-9b7a-0c04-710b-f0c87b1380fd",
+    "name" : "padding_bottom",
+    "label" : "Padding Bottom",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "pb-reg", "Regular" ], [ "pb-lg", "Large" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "display_width" : null,
+    "type" : "choice",
+    "default" : "pb-reg"
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "display_width" : null,
+  "type" : "group",
+  "default" : {
+    "background_color" : "p",
+    "padding_top" : "pt-reg",
+    "padding_bottom" : "pb-reg"
+  }
+}, {
+  "id" : "932378f3-e479-85c5-ca51-9f01a62bcae2",
+  "name" : "heading",
+  "label" : "Heading",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "display_width" : null,
+  "type" : "text",
+  "default" : "Integrated Lifecycle Execution"
+}, {
+  "id" : "7bf1dda1-217c-e4f5-65a5-b03b218bd04a",
+  "name" : "copy",
+  "label" : "Copy",
+  "required" : false,
+  "locked" : false,
+  "display_width" : null,
+  "type" : "richtext",
+  "default" : "Unlike traditional firms, Sovereign Assets maintains total control. We do not outsource our vision; we execute it through an unbroken chain of internal expertise."
+}, {
+  "id" : "42f22bd3-4741-6a0d-ce3a-2d66a44774c2",
+  "name" : "cards",
+  "label" : "Stages",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : "db44bc81-9345-5216-bfda-2904f74a4bb4",
+    "default" : 4
+  },
+  "children" : [ {
+    "id" : "db44bc81-9345-5216-bfda-2904f74a4bb4",
+    "name" : "title",
+    "label" : "Title",
+    "required" : false,
+    "locked" : false,
+    "allow_new_line" : false,
+    "display_width" : null,
+    "type" : "text",
+    "default" : "Underwriting"
+  }, {
+    "id" : "b50bdfe2-3ebc-40cc-60be-95e7a36613a0",
+    "name" : "description",
+    "label" : "Description",
+    "required" : false,
+    "locked" : false,
+    "display_width" : null,
+    "type" : "richtext",
+    "default" : "Deep-dive data synthesis and proprietary algorithmic modeling to identify hidden value."
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "display_width" : null,
+  "type" : "group",
+  "default" : [ {
+    "title" : "Underwriting",
+    "description" : "Deep-dive data synthesis and proprietary algorithmic modeling to identify hidden value."
+  }, {
+    "title" : "Underwriting",
+    "description" : "Deep-dive data synthesis and proprietary algorithmic modeling to identify hidden value."
+  }, {
+    "title" : "Underwriting",
+    "description" : "Deep-dive data synthesis and proprietary algorithmic modeling to identify hidden value."
+  }, {
+    "title" : "Underwriting",
+    "description" : "Deep-dive data synthesis and proprietary algorithmic modeling to identify hidden value."
+  } ]
+} ]
