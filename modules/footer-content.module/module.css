@@ -29,14 +29,16 @@
     letter-spacing: 0.2em;
 }
 .footer--menu .hs-menu-wrapper ul li a, .footer--email a,
-.footer--bottom--menu .hs-menu-wrapper ul li a{
+.footer--bottom--menu .hs-menu-wrapper ul li a,
+.footer--social ul li a{
     letter-spacing: 0.1em;
     text-decoration: none;
     color: var(--color-w-grey);
 }
 .footer--menu .hs-menu-wrapper ul li a:hover,
 .footer--email a:hover,
-.footer--bottom--menu .hs-menu-wrapper ul li a:hover{
+.footer--bottom--menu .hs-menu-wrapper ul li a:hover,
+.footer--social ul li a:hover{
     color: var(--color-s);
 }
 .footer--bottom {
@@ -49,4 +51,14 @@
     font-size: 10px;
     text-transform: uppercase;
     letter-spacing: 0.1em;
+}
+.footer--social ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.footer--social ul li svg {
+    width: 28px;
 }
