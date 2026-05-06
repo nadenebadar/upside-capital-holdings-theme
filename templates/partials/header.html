@@ -8,28 +8,33 @@
   <div class="container">
     {# Header logo column #}
     <div class="row justify-content-between align-items-center">
-      <div class="col-auto">
-        <nav class="header__logo header__logo--main">
+      <div class="col-lg-auto d-flex justify-content-between align-items-center">
+        <div class="header__logo header__logo--main">
           {% module "site_logo"
             path="@hubspot/logo"
             img={
               "loading": "eager"
             }
           %}
-        </nav>
+        </div>
+        <div class="mobile-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
       
 
       {# Header navigation column #}
-      <div class="col-auto">
-        <div class="header__megamenu">
+      <div class="col-lg-auto header__megamenu--content">        
+        <nav class="header__megamenu">
           {% module "menu_navigation"
             path="@hubspot/menu"
           %}
-        </div>
+        </nav>
       </div>
 
-      <div class="col-auto">
+      <div class="col-lg-auto header__button--content">
         <div class="header__button">
           {% module "header_button_text" path="@hubspot/text", label="Header Button Text", value="Investor Login", export_to_template_context=True %}
           {% module "header_button_link" path="@hubspot/text", label="#", export_to_template_context=True %}

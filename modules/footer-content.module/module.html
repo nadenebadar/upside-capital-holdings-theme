@@ -2,7 +2,7 @@
     <div class="container">
         <div class="footer--top">
             <div class="row justify-content-between">
-                <div class="col-md-auto">
+                <div class="col-md-auto mb-6">
                     <div class="footer--logo">
                         {% set loadingAttr = module.logo_field.loading != 'disabled' ? '{{ module.logo_field.loading }}' : '' %}
 
@@ -25,7 +25,7 @@
                 </div>
 
                 {% for item in module.menu %}
-                <div class="col-md-auto">
+                <div class="col-md-auto mb-6" >
                     <div class="footer--title mb-6">
                         {{ item.title }}
                     </div>
@@ -35,7 +35,7 @@
                 </div>
                 {% endfor %}
 
-                <div class="col-md-auto">
+                <div class="col-md-auto mb-6">
                     <div class="footer--title mb-6">
                         {{ module.contact.title }}
                     </div>

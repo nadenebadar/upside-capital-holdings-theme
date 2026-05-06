@@ -187,10 +187,13 @@ a:active {
 h1,
 .h1 {
   {{ h1_font.style }};
-  font-size: {{ h1_font.size ~ h1_font.size_unit }};
+  font-size: 4rem;
   text-transform: {{ h1_text_transform }};
   letter-spacing: {{ h1_letter_spacing }};
   line-height: {{ h1_line_height }};
+}
+@media screen and (min-width: 992px){
+  font-size: {{ h1_font.size ~ h1_font.size_unit }};
 }
 
 h2,
