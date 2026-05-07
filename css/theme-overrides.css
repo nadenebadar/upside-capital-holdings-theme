@@ -193,7 +193,10 @@ h1,
   line-height: {{ h1_line_height }};
 }
 @media screen and (min-width: 992px){
-  font-size: {{ h1_font.size ~ h1_font.size_unit }};
+  h1,
+  .h1{
+    font-size: {{ h1_font.size ~ h1_font.size_unit }};
+  }
 }
 
 h2,
