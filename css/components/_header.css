@@ -57,7 +57,7 @@
   text-align: center;
 }
 
-@media screen and (max-width: 992px){
+@media screen and (max-width: 991px){
   .header__megamenu--content,
   .header__button--content{
     display: none;
@@ -66,6 +66,9 @@
   .header__megamenu--content.is-active,
   .header__button--content.is-active{
     display: block;
+  }
+  .header__megamenu{
+    padding-bottom: var(--space-4);
   }
 }
 
@@ -121,7 +124,7 @@
   transform: rotate(45deg) translateY(-50%);
 }
 
-@media screena and (min-width: 992px){
+@media screen and (min-width: 992px){
   .mobile-toggle{
     display: none;
   }

@@ -4,14 +4,14 @@
   var navClass = document.querySelector('.header__megamenu--content');
   var buttonHeaderClass = document.querySelector('.header__button--content');
   var $body = document.body;
-  var allToggles = [navClass, buttonHeaderClass];
 
   // Function for toggling mobile navigation
   function toggleNav() {
-    allToggles.forEach(function (toggle) {
-      toggle.classList.toggle('is-active');
-      
-    });
+
+    navClass.classList.toggle('is-active');
+    if(buttonHeaderClass){
+      buttonHeaderClass.classList.toggle('is-active');
+    }
     $body.classList.toggle('no-scroll');
     navToggle.classList.toggle('is-active');
   }

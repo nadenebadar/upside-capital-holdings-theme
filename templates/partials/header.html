@@ -34,6 +34,7 @@
         </nav>
       </div>
 
+      {% if widget_data.header_button_text.value %}
       <div class="col-lg-auto header__button--content">
         <div class="header__button">
           {% module "header_button_text" path="@hubspot/text", label="Header Button Text", value="Investor Login", export_to_template_context=True %}
@@ -43,6 +44,7 @@
           </a>
         </div>
       </div>
+      {% endif %}
       
     </div> 
 
