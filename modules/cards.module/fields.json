@@ -15,9 +15,9 @@
     "multiple" : false,
     "reordering_enabled" : true,
     "preset" : null,
-    "display_width" : null,
     "type" : "choice",
-    "default" : "n"
+    "display_width" : null,
+    "default" : ""
   }, {
     "id" : "a7bcf196-2ad7-832f-9a74-897a7283dee0",
     "name" : "padding_top",
@@ -29,8 +29,8 @@
     "multiple" : false,
     "reordering_enabled" : true,
     "preset" : null,
-    "display_width" : null,
     "type" : "choice",
+    "display_width" : null,
     "default" : "pt-reg"
   }, {
     "id" : "d9981fb6-9b7a-0c04-710b-f0c87b1380fd",
@@ -43,19 +43,45 @@
     "multiple" : false,
     "reordering_enabled" : true,
     "preset" : null,
-    "display_width" : null,
     "type" : "choice",
+    "display_width" : null,
     "default" : "pb-reg"
+  }, {
+    "id" : "70f0248d-4fe2-87a9-0895-c2bb924b4b52",
+    "name" : "cards_height",
+    "label" : "Cards Height",
+    "required" : false,
+    "locked" : false,
+    "display" : "text",
+    "min" : 250,
+    "step" : 1,
+    "type" : "number",
+    "display_width" : null,
+    "default" : 250
+  }, {
+    "id" : "568cd10b-bb51-16fb-49c6-355eb93fada6",
+    "name" : "cards_width",
+    "label" : "Cards Width",
+    "required" : false,
+    "locked" : false,
+    "display" : "text",
+    "min" : 386,
+    "step" : 1,
+    "type" : "number",
+    "display_width" : null,
+    "default" : 386
   } ],
   "tab" : "STYLE",
   "expanded" : false,
   "group_occurrence_meta" : null,
-  "display_width" : null,
   "type" : "group",
+  "display_width" : null,
   "default" : {
-    "background_color" : "n",
+    "background_color" : "",
     "padding_top" : "pt-reg",
-    "padding_bottom" : "pb-reg"
+    "padding_bottom" : "pb-reg",
+    "cards_height" : 250,
+    "cards_width" : 386
   }
 }, {
   "id" : "932378f3-e479-85c5-ca51-9f01a62bcae2",
@@ -64,8 +90,8 @@
   "required" : false,
   "locked" : false,
   "allow_new_line" : false,
-  "display_width" : null,
   "type" : "text",
+  "display_width" : null,
   "default" : "Core Divisions"
 }, {
   "id" : "42f22bd3-4741-6a0d-ce3a-2d66a44774c2",
@@ -80,14 +106,23 @@
     "default" : 6
   },
   "children" : [ {
+    "id" : "ae83fd3f-7f55-73a5-9720-944511dc471d",
+    "name" : "tag",
+    "label" : "Tag",
+    "required" : false,
+    "locked" : false,
+    "allow_new_line" : false,
+    "type" : "text",
+    "display_width" : null
+  }, {
     "id" : "db44bc81-9345-5216-bfda-2904f74a4bb4",
     "name" : "title",
     "label" : "Title",
     "required" : false,
     "locked" : false,
     "allow_new_line" : false,
-    "display_width" : null,
     "type" : "text",
+    "display_width" : null,
     "default" : "Multifamily Investment"
   }, {
     "id" : "b50bdfe2-3ebc-40cc-60be-95e7a36613a0",
@@ -95,9 +130,9 @@
     "label" : "Description",
     "required" : false,
     "locked" : false,
-    "display_width" : null,
     "type" : "richtext",
-    "default" : "&nbsp;<span style=\"color: #475569; background-color: #ffffff;\">Strategic acquisition of high-yield residential portfolios in gateway cities.</span>&nbsp;"
+    "display_width" : null,
+    "default" : "Strategic acquisition of high-yield residential portfolios in gateway cities."
   }, {
     "id" : "f3f04605-dfa3-1cf5-b3a0-a94437a20e39",
     "name" : "link",
@@ -111,8 +146,8 @@
       "required" : false,
       "locked" : false,
       "allow_new_line" : false,
-      "display_width" : null,
       "type" : "text",
+      "display_width" : null,
       "default" : "Learn More"
     }, {
       "id" : "6d3ecee6-68c9-546c-5150-ef8231c7177b",
@@ -122,8 +157,8 @@
       "locked" : false,
       "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER", "PAYMENT" ],
       "show_advanced_rel_options" : false,
-      "display_width" : null,
       "type" : "link",
+      "display_width" : null,
       "default" : {
         "url" : {
           "content_id" : null,
@@ -137,8 +172,8 @@
     "tab" : "CONTENT",
     "expanded" : false,
     "group_occurrence_meta" : null,
-    "display_width" : null,
     "type" : "group",
+    "display_width" : null,
     "default" : {
       "text_field" : "Learn More",
       "link_field" : {
@@ -160,8 +195,8 @@
     "responsive" : true,
     "resizable" : true,
     "show_loading" : false,
-    "display_width" : null,
     "type" : "image",
+    "display_width" : null,
     "default" : {
       "size_type" : "auto",
       "src" : "https://21306361.fs1.hubspotusercontent-na2.net/hubfs/21306361/unnamed.png",
@@ -176,11 +211,11 @@
   "tab" : "CONTENT",
   "expanded" : false,
   "group_occurrence_meta" : null,
-  "display_width" : null,
   "type" : "group",
+  "display_width" : null,
   "default" : [ {
     "title" : "Multifamily Investment",
-    "description" : "&nbsp;<span style=\"color: #475569; background-color: #ffffff;\">Strategic acquisition of high-yield residential portfolios in gateway cities.</span>&nbsp;",
+    "description" : "Strategic acquisition of high-yield residential portfolios in gateway cities.",
     "link" : {
       "text_field" : "Learn More",
       "link_field" : {
@@ -205,7 +240,7 @@
     }
   }, {
     "title" : "Multifamily Investment",
-    "description" : "&nbsp;<span style=\"color: #475569; background-color: #ffffff;\">Strategic acquisition of high-yield residential portfolios in gateway cities.</span>&nbsp;",
+    "description" : "Strategic acquisition of high-yield residential portfolios in gateway cities.",
     "link" : {
       "text_field" : "Learn More",
       "link_field" : {
@@ -230,7 +265,7 @@
     }
   }, {
     "title" : "Multifamily Investment",
-    "description" : "&nbsp;<span style=\"color: #475569; background-color: #ffffff;\">Strategic acquisition of high-yield residential portfolios in gateway cities.</span>&nbsp;",
+    "description" : "Strategic acquisition of high-yield residential portfolios in gateway cities.",
     "link" : {
       "text_field" : "Learn More",
       "link_field" : {
@@ -255,7 +290,7 @@
     }
   }, {
     "title" : "Multifamily Investment",
-    "description" : "&nbsp;<span style=\"color: #475569; background-color: #ffffff;\">Strategic acquisition of high-yield residential portfolios in gateway cities.</span>&nbsp;",
+    "description" : "Strategic acquisition of high-yield residential portfolios in gateway cities.",
     "link" : {
       "text_field" : "Learn More",
       "link_field" : {
@@ -280,7 +315,7 @@
     }
   }, {
     "title" : "Multifamily Investment",
-    "description" : "&nbsp;<span style=\"color: #475569; background-color: #ffffff;\">Strategic acquisition of high-yield residential portfolios in gateway cities.</span>&nbsp;",
+    "description" : "Strategic acquisition of high-yield residential portfolios in gateway cities.",
     "link" : {
       "text_field" : "Learn More",
       "link_field" : {
@@ -305,7 +340,7 @@
     }
   }, {
     "title" : "Multifamily Investment",
-    "description" : "&nbsp;<span style=\"color: #475569; background-color: #ffffff;\">Strategic acquisition of high-yield residential portfolios in gateway cities.</span>&nbsp;",
+    "description" : "Strategic acquisition of high-yield residential portfolios in gateway cities.",
     "link" : {
       "text_field" : "Learn More",
       "link_field" : {

@@ -1,12 +1,22 @@
 [ {
+  "id" : "87f9f9f9-59fb-5e8d-d77c-a7d0e9513c3b",
+  "name" : "title_tag",
+  "label" : "Title Tag",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : ""
+}, {
   "id" : "cee3e58f-6919-c701-adef-297c4fe7e3e1",
   "name" : "header",
   "label" : "Header",
   "required" : false,
   "locked" : false,
   "allow_new_line" : false,
-  "display_width" : null,
   "type" : "text",
+  "display_width" : null,
   "default" : "The Global Standard in Vertically Integrated <span>Real Estate.</span>"
 }, {
   "id" : "1c726129-661e-2062-2dc6-6f5c02f90b96",
@@ -14,8 +24,8 @@
   "label" : "Copy",
   "required" : false,
   "locked" : false,
-  "display_width" : null,
   "type" : "richtext",
+  "display_width" : null,
   "default" : "Sovereign Assets orchestrates the entire real estate lifecycle. From underwriting institutional-grade acquisitions to precision asset management, we define the architecture of modern capital."
 }, {
   "id" : "4c0e9970-41bf-5511-f38d-7a19c93f1fcb",
@@ -35,8 +45,8 @@
       "label" : "Color",
       "required" : false,
       "locked" : false,
-      "display_width" : null,
       "type" : "color",
+      "display_width" : null,
       "default" : {
         "color" : "#ffffff",
         "opacity" : 100
@@ -47,8 +57,8 @@
       "label" : "Highlight Color",
       "required" : false,
       "locked" : false,
-      "display_width" : null,
       "type" : "color",
+      "display_width" : null,
       "default" : {
         "color" : "#316b00",
         "opacity" : 100
@@ -57,15 +67,15 @@
     "tab" : "STYLE",
     "expanded" : false,
     "group_occurrence_meta" : null,
-    "display_width" : null,
     "type" : "group",
+    "display_width" : null,
     "default" : {
       "color_field" : {
         "color" : "#ffffff",
         "opacity" : 100
       },
       "highlight_color" : {
-        "color" : "#68B631",
+        "color" : "#316b00",
         "opacity" : 100
       }
     }
@@ -75,8 +85,8 @@
     "label" : "Copy Color",
     "required" : false,
     "locked" : false,
-    "display_width" : null,
     "type" : "color",
+    "display_width" : null,
     "default" : {
       "color" : "#d9eaff",
       "opacity" : 100
@@ -92,8 +102,8 @@
     "multiple" : false,
     "reordering_enabled" : true,
     "preset" : null,
-    "display_width" : null,
     "type" : "choice",
+    "display_width" : null,
     "default" : "secondary"
   }, {
     "id" : "10f59c04-4446-43b2-0094-f95481829a48",
@@ -101,8 +111,8 @@
     "label" : "Background image",
     "required" : false,
     "locked" : false,
-    "display_width" : null,
     "type" : "backgroundimage",
+    "display_width" : null,
     "default" : {
       "background_position" : "MIDDLE_CENTER",
       "background_size" : "cover",
@@ -114,18 +124,32 @@
     "label" : "Background Gradient Color",
     "required" : false,
     "locked" : false,
-    "display_width" : null,
     "type" : "color",
+    "display_width" : null,
     "default" : {
       "color" : "#000F1E",
       "opacity" : 40
     }
+  }, {
+    "id" : "0f92a339-4a63-a86a-b273-bf640755654c",
+    "name" : "background_color",
+    "label" : "Background Color",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "p", "Primary" ], [ "s", "Secondary" ], [ "t", "Tertiary" ], [ "n", "Neutral" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "display_width" : null,
+    "default" : "p"
   } ],
   "tab" : "STYLE",
   "expanded" : false,
   "group_occurrence_meta" : null,
-  "display_width" : null,
   "type" : "group",
+  "display_width" : null,
   "default" : {
     "heading" : {
       "color_field" : {
@@ -133,7 +157,7 @@
         "opacity" : 100
       },
       "highlight_color" : {
-        "color" : "#68B631",
+        "color" : "#316b00",
         "opacity" : 100
       }
     },
@@ -148,9 +172,10 @@
       "src" : "https://21306361.fs1.hubspotusercontent-na2.net/hubfs/21306361/image-asset.jpeg"
     },
     "background_gradient_color" : {
-      "color" : "#000f1e",
-      "opacity" : 100
-    }
+      "color" : "#000F1E",
+      "opacity" : 40
+    },
+    "background_color" : "p"
   }
 }, {
   "id" : "1136c175-ddcb-6f7f-1fbc-95ab51cfc246",
@@ -165,8 +190,8 @@
     "required" : false,
     "locked" : false,
     "allow_new_line" : false,
-    "display_width" : null,
     "type" : "text",
+    "display_width" : null,
     "default" : "Explore Our Platform"
   }, {
     "id" : "fb9c5acc-92dc-ed04-70a4-d739b55a9634",
@@ -176,8 +201,8 @@
     "locked" : false,
     "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER", "PAYMENT" ],
     "show_advanced_rel_options" : false,
-    "display_width" : null,
     "type" : "link",
+    "display_width" : null,
     "default" : {
       "url" : {
         "content_id" : null,
@@ -191,8 +216,8 @@
   "tab" : "CONTENT",
   "expanded" : false,
   "group_occurrence_meta" : null,
-  "display_width" : null,
   "type" : "group",
+  "display_width" : null,
   "default" : {
     "text" : "Explore Our Platform",
     "link_field" : {

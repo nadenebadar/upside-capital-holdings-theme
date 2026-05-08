@@ -1,0 +1,67 @@
+{% set titleColor = 'p' %}
+{% set copyColor = 'w-grey' %}
+{% if module.style.background_color == "p" %}
+    {% set titleColor = 'white' %}
+{% endif %}
+<div class="two-column-text-img bg-color-{{ module.style.background_color }} {{ module.style.padding_top }} {{ module.style.padding_bottom }}">
+    <div class="container">
+        <div class="grid grid--2">
+            <div class="grid-col">
+                {% if module.heading %}
+                    <h3 class="mb-8 font-color-{{ titleColor }}">
+                        {{ module.heading }}
+                    </h3>
+                {% endif %}
+                <div class="copy h5 font-color-{{ copyColor}}">
+                    {{ module.copy }}
+                </div>
+                {% if module.list %}
+                <div class="list mt-12">
+                    <ul>
+                        {% for item in module.list %}
+                            <li class="{% if not loop.first %}mt-8{% endif %}">
+                                <div class="list-icon">
+                                    {% if item.icon.src %}
+                                        {% set sizeAttrs = 'width="{{ item.icon.width|escape_attr }}" height="{{ item.icon.height|escape_attr }}"' %}
+                                        {% if item.icon.size_type == 'auto' %}
+                                            {% set sizeAttrs = 'width="{{ item.icon.width|escape_attr }}" height="{{ item.icon.height|escape_attr }}" style="max-width: 100%; height: auto;"' %}
+                                        {% elif item.icon.size_type == 'auto_custom_max' %}
+                                            {% set sizeAttrs = 'width="{{ item.icon.max_width|escape_attr }}" height="{{ item.icon.max_height|escape_attr }}" style="max-width: 100%; height: auto;"' %}
+                                        {% endif %}
+                                        {% set loadingAttr = item.icon.loading != 'disabled' ? 'loading="{{ item.icon.loading|escape_attr }}"' : '' %}
+                                        <img src="{{ item.icon.src|escape_url }}" alt="{{ item.icon.alt|escape_attr }}" {{ loadingAttr }}>
+                                    {% endif %}
+                                </div>
+                                <div class="list-info">
+                                    <h4 class="font-color-{{ titleColor }} mb-2">
+                                        {{ item.title }}
+                                    </h4>
+                                    <div class="font-color-{{ copyColor }}">
+                                        {{ item.short_description }}
+                                    </div>
+                                    
+                                </div>
+                            </li>                           
+                        {% endfor %}
+                    </ul>
+                </div>
+                {% endif %}
+            </div>
+            <div class="grid-col">
+                <div class="image-cover">
+                {% if module.image_field.src %}
+                    {% set sizeAttrs = 'width="{{ module.image_field.width|escape_attr }}" height="{{ module.image_field.height|escape_attr }}"' %}
+                    {% if module.image_field.size_type == 'auto' %}
+                        {% set sizeAttrs = 'width="{{ module.image_field.width|escape_attr }}" height="{{ module.image_field.height|escape_attr }}" style="max-width: 100%; height: auto;"' %}
+                    {% elif module.image_field.size_type == 'auto_custom_max' %}
+                        {% set sizeAttrs = 'width="{{ module.image_field.max_width|escape_attr }}" height="{{ module.image_field.max_height|escape_attr }}" style="max-width: 100%; height: auto;"' %}
+                    {% endif %}
+                    {% set loadingAttr = module.image_field.loading != 'disabled' ? 'loading="{{ module.image_field.loading|escape_attr }}"' : '' %}
+                    <img src="{{ module.image_field.src|escape_url }}" alt="{{ module.image_field.alt|escape_attr }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                {% endif %}
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>

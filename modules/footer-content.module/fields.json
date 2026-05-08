@@ -5,12 +5,15 @@
   "required" : false,
   "locked" : false,
   "show_loading" : false,
-  "display_width" : null,
   "type" : "logo",
+  "display_width" : null,
   "default" : {
-    "override_inherited_src" : false,
-    "src" : null,
-    "alt" : null
+    "override_inherited_src" : true,
+    "src" : "https://21306361.fs1.hubspotusercontent-na2.net/hubfs/21306361/KALT_UpsideCapitalHoldings_Logo_WHITE.png",
+    "alt" : "KALT_UpsideCapitalHoldings_Logo_WHITE",
+    "suppress_company_name" : true,
+    "width" : 1200,
+    "height" : 369
   }
 }, {
   "id" : "4106f2a2-2fd8-f5a2-6c49-df27a3ad4760",
@@ -18,8 +21,8 @@
   "label" : "Copy",
   "required" : false,
   "locked" : false,
-  "display_width" : null,
-  "type" : "richtext"
+  "type" : "richtext",
+  "display_width" : null
 }, {
   "id" : "55383d66-a17b-565e-f399-c43301cba568",
   "name" : "menu",
@@ -39,8 +42,8 @@
     "required" : false,
     "locked" : false,
     "allow_new_line" : false,
-    "display_width" : null,
     "type" : "text",
+    "display_width" : null,
     "default" : "Global Platforms"
   }, {
     "id" : "827bc480-ae14-922a-a1bf-8cf8d586e866",
@@ -48,15 +51,15 @@
     "label" : "Menu",
     "required" : false,
     "locked" : false,
-    "display_width" : null,
     "type" : "menu",
+    "display_width" : null,
     "default" : 341450639071
   } ],
   "tab" : "CONTENT",
   "expanded" : false,
   "group_occurrence_meta" : null,
-  "display_width" : null,
   "type" : "group",
+  "display_width" : null,
   "default" : [ {
     "title" : "Global Platforms",
     "menu_field" : 341450639071
@@ -77,8 +80,8 @@
     "required" : false,
     "locked" : false,
     "allow_new_line" : false,
-    "display_width" : null,
     "type" : "text",
+    "display_width" : null,
     "default" : "Contact"
   }, {
     "id" : "fda385bf-bde8-f47b-ad23-daee52cee391",
@@ -87,8 +90,8 @@
     "required" : false,
     "locked" : false,
     "allow_new_line" : false,
-    "display_width" : null,
     "type" : "text",
+    "display_width" : null,
     "default" : "Two World Trade Center<br>Floor 88<br>New York, NY 10007"
   }, {
     "id" : "5e3f4f20-b0b4-2c86-25ab-c1267a66b9af",
@@ -98,8 +101,8 @@
     "locked" : false,
     "supported_types" : [ "EMAIL_ADDRESS" ],
     "show_advanced_rel_options" : false,
-    "display_width" : null,
     "type" : "link",
+    "display_width" : null,
     "default" : {
       "url" : {
         "content_id" : null,
@@ -132,8 +135,8 @@
       "multiple" : false,
       "reordering_enabled" : true,
       "preset" : null,
-      "display_width" : null,
       "type" : "choice",
+      "display_width" : null,
       "default" : "fb"
     }, {
       "id" : "6bbfc800-9db6-18ae-6880-fa367f8f4e1e",
@@ -143,8 +146,8 @@
       "locked" : false,
       "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER", "PAYMENT" ],
       "show_advanced_rel_options" : false,
-      "display_width" : null,
       "type" : "link",
+      "display_width" : null,
       "default" : {
         "url" : {
           "content_id" : null,
@@ -158,8 +161,8 @@
     "tab" : "CONTENT",
     "expanded" : false,
     "group_occurrence_meta" : null,
-    "display_width" : null,
     "type" : "group",
+    "display_width" : null,
     "default" : [ {
       "social_media" : "fb",
       "link_field" : {
@@ -198,8 +201,8 @@
   "tab" : "CONTENT",
   "expanded" : false,
   "group_occurrence_meta" : null,
-  "display_width" : null,
   "type" : "group",
+  "display_width" : null,
   "default" : {
     "title" : "Contact",
     "address" : "Two World Trade Center<br>Floor 88<br>New York, NY 10007",
@@ -254,8 +257,8 @@
   "required" : false,
   "locked" : false,
   "allow_new_line" : false,
-  "display_width" : null,
   "type" : "text",
+  "display_width" : null,
   "default" : "© {{ year }} Upside Capital Holdings. All rights reserved."
 }, {
   "id" : "c92cb718-e142-56fc-a08b-598124662c52",
@@ -263,7 +266,7 @@
   "label" : "Bottom Menu",
   "required" : false,
   "locked" : false,
-  "display_width" : null,
   "type" : "menu",
+  "display_width" : null,
   "default" : 341450639091
 } ]

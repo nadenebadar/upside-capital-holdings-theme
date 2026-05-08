@@ -21,8 +21,8 @@
     "multiple" : false,
     "reordering_enabled" : true,
     "preset" : null,
-    "display_width" : null,
     "type" : "choice",
+    "display_width" : null,
     "default" : "facebook-f"
   }, {
     "id" : "social_links.custom_icon",
@@ -39,8 +39,8 @@
       "access" : null
     },
     "icon_set" : "fontawesome-6.4.2",
-    "display_width" : null,
     "type" : "icon",
+    "display_width" : null,
     "default" : {
       "name" : "arrow-alt-circle-up",
       "type" : "SOLID",
@@ -54,8 +54,8 @@
     "locked" : false,
     "supported_types" : [ "EXTERNAL", "EMAIL_ADDRESS" ],
     "show_advanced_rel_options" : false,
-    "display_width" : null,
     "type" : "link",
+    "display_width" : null,
     "default" : {
       "no_follow" : false,
       "open_in_new_tab" : true,
@@ -78,21 +78,21 @@
       "required" : true,
       "locked" : false,
       "allow_new_line" : false,
-      "display_width" : null,
       "type" : "text",
+      "display_width" : null,
       "default" : "Follow us on Facebook"
     } ],
     "tab" : "CONTENT",
     "expanded" : false,
     "group_occurrence_meta" : null,
-    "display_width" : null,
-    "type" : "group"
+    "type" : "group",
+    "display_width" : null
   } ],
   "tab" : "CONTENT",
   "expanded" : false,
   "group_occurrence_meta" : null,
-  "display_width" : null,
   "type" : "group",
+  "display_width" : null,
   "default" : [ {
     "social_account" : "facebook-f",
     "social_link" : {
@@ -179,8 +179,8 @@
           "opacity" : true
         }
       },
-      "display_width" : null,
       "type" : "color",
+      "display_width" : null,
       "default" : {
         "color" : null,
         "opacity" : null,
@@ -192,8 +192,8 @@
     "tab" : "STYLE",
     "expanded" : false,
     "group_occurrence_meta" : null,
-    "display_width" : null,
-    "type" : "group"
+    "type" : "group",
+    "display_width" : null
   }, {
     "id" : "styles.size",
     "name" : "size",
@@ -211,14 +211,14 @@
       "max" : 50,
       "step" : 1,
       "suffix" : "px",
-      "display_width" : null,
-      "type" : "number"
+      "type" : "number",
+      "display_width" : null
     } ],
     "tab" : "STYLE",
     "expanded" : false,
     "group_occurrence_meta" : null,
-    "display_width" : null,
-    "type" : "group"
+    "type" : "group",
+    "display_width" : null
   }, {
     "id" : "styles.background",
     "name" : "background",
@@ -231,8 +231,8 @@
       "label" : "Color",
       "required" : false,
       "locked" : false,
-      "display_width" : null,
       "type" : "color",
+      "display_width" : null,
       "default" : {
         "color" : null,
         "opacity" : null,
@@ -244,8 +244,8 @@
     "tab" : "STYLE",
     "expanded" : false,
     "group_occurrence_meta" : null,
-    "display_width" : null,
-    "type" : "group"
+    "type" : "group",
+    "display_width" : null
   }, {
     "id" : "styles.corner",
     "name" : "corner",
@@ -262,14 +262,14 @@
       "max" : 100,
       "step" : 1,
       "suffix" : "px",
-      "display_width" : null,
-      "type" : "number"
+      "type" : "number",
+      "display_width" : null
     } ],
     "tab" : "STYLE",
     "expanded" : false,
     "group_occurrence_meta" : null,
-    "display_width" : null,
-    "type" : "group"
+    "type" : "group",
+    "display_width" : null
   }, {
     "id" : "styles.spacing",
     "name" : "spacing",
@@ -287,23 +287,23 @@
       "max" : 50,
       "step" : 5,
       "suffix" : "px",
-      "display_width" : null,
-      "type" : "number"
+      "type" : "number",
+      "display_width" : null
     }, {
       "id" : "styles.spacing.spacing",
       "name" : "spacing",
       "label" : "Spacing",
       "required" : false,
       "locked" : false,
-      "display_width" : null,
       "type" : "spacing",
+      "display_width" : null,
       "default" : { }
     } ],
     "tab" : "STYLE",
     "expanded" : false,
     "group_occurrence_meta" : null,
-    "display_width" : null,
-    "type" : "group"
+    "type" : "group",
+    "display_width" : null
   }, {
     "id" : "styles.alignment",
     "name" : "alignment",
@@ -317,19 +317,19 @@
       "required" : false,
       "locked" : false,
       "alignment_direction" : "HORIZONTAL",
-      "display_width" : null,
       "type" : "alignment",
+      "display_width" : null,
       "default" : { }
     } ],
     "tab" : "STYLE",
     "expanded" : false,
     "group_occurrence_meta" : null,
-    "display_width" : null,
-    "type" : "group"
+    "type" : "group",
+    "display_width" : null
   } ],
   "tab" : "STYLE",
   "expanded" : false,
   "group_occurrence_meta" : null,
-  "display_width" : null,
-  "type" : "group"
+  "type" : "group",
+  "display_width" : null
 } ]

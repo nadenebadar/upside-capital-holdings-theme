@@ -6,8 +6,8 @@
   "locked" : false,
   "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "CALL_TO_ACTION" ],
   "show_advanced_rel_options" : false,
-  "display_width" : null,
   "type" : "link",
+  "display_width" : null,
   "default" : {
     "url" : {
       "href" : "",
@@ -23,8 +23,8 @@
   "required" : true,
   "locked" : false,
   "allow_new_line" : false,
-  "display_width" : null,
   "type" : "text",
+  "display_width" : null,
   "default" : "Add a button link here"
 }, {
   "id" : "styles",
@@ -45,8 +45,8 @@
       "required" : false,
       "locked" : false,
       "load_external_fonts" : true,
-      "display_width" : null,
       "type" : "font",
+      "display_width" : null,
       "default" : {
         "font" : null,
         "font_set" : "DEFAULT",
@@ -65,8 +65,8 @@
     "tab" : "STYLE",
     "expanded" : false,
     "group_occurrence_meta" : null,
-    "display_width" : null,
-    "type" : "group"
+    "type" : "group",
+    "display_width" : null
   }, {
     "id" : "styles.background",
     "name" : "background",
@@ -79,8 +79,8 @@
       "label" : "Color",
       "required" : false,
       "locked" : false,
-      "display_width" : null,
       "type" : "color",
+      "display_width" : null,
       "default" : {
         "color" : null,
         "opacity" : null,
@@ -92,8 +92,8 @@
     "tab" : "STYLE",
     "expanded" : false,
     "group_occurrence_meta" : null,
-    "display_width" : null,
-    "type" : "group"
+    "type" : "group",
+    "display_width" : null
   }, {
     "id" : "styles.border",
     "name" : "border",
@@ -107,15 +107,15 @@
       "required" : false,
       "locked" : false,
       "allow_custom_border_sides" : false,
-      "display_width" : null,
       "type" : "border",
+      "display_width" : null,
       "default" : { }
     } ],
     "tab" : "STYLE",
     "expanded" : false,
     "group_occurrence_meta" : null,
-    "display_width" : null,
-    "type" : "group"
+    "type" : "group",
+    "display_width" : null
   }, {
     "id" : "styles.corner",
     "name" : "corner",
@@ -132,14 +132,14 @@
       "max" : 100,
       "step" : 1,
       "suffix" : "px",
-      "display_width" : null,
-      "type" : "number"
+      "type" : "number",
+      "display_width" : null
     } ],
     "tab" : "STYLE",
     "expanded" : false,
     "group_occurrence_meta" : null,
-    "display_width" : null,
-    "type" : "group"
+    "type" : "group",
+    "display_width" : null
   }, {
     "id" : "styles.spacing",
     "name" : "spacing",
@@ -152,15 +152,15 @@
       "label" : "Spacing",
       "required" : false,
       "locked" : false,
-      "display_width" : null,
       "type" : "spacing",
+      "display_width" : null,
       "default" : { }
     } ],
     "tab" : "STYLE",
     "expanded" : false,
     "group_occurrence_meta" : null,
-    "display_width" : null,
-    "type" : "group"
+    "type" : "group",
+    "display_width" : null
   }, {
     "id" : "styles.alignment",
     "name" : "alignment",
@@ -174,19 +174,19 @@
       "required" : false,
       "locked" : false,
       "alignment_direction" : "HORIZONTAL",
-      "display_width" : null,
       "type" : "alignment",
+      "display_width" : null,
       "default" : { }
     } ],
     "tab" : "STYLE",
     "expanded" : false,
     "group_occurrence_meta" : null,
-    "display_width" : null,
-    "type" : "group"
+    "type" : "group",
+    "display_width" : null
   } ],
   "tab" : "STYLE",
   "expanded" : false,
   "group_occurrence_meta" : null,
-  "display_width" : null,
-  "type" : "group"
+  "type" : "group",
+  "display_width" : null
 } ]

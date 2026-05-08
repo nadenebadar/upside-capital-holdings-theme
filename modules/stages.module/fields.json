@@ -15,8 +15,8 @@
     "multiple" : false,
     "reordering_enabled" : true,
     "preset" : null,
-    "display_width" : null,
     "type" : "choice",
+    "display_width" : null,
     "default" : "p"
   }, {
     "id" : "a7bcf196-2ad7-832f-9a74-897a7283dee0",
@@ -29,8 +29,8 @@
     "multiple" : false,
     "reordering_enabled" : true,
     "preset" : null,
-    "display_width" : null,
     "type" : "choice",
+    "display_width" : null,
     "default" : "pt-reg"
   }, {
     "id" : "d9981fb6-9b7a-0c04-710b-f0c87b1380fd",
@@ -43,15 +43,15 @@
     "multiple" : false,
     "reordering_enabled" : true,
     "preset" : null,
-    "display_width" : null,
     "type" : "choice",
+    "display_width" : null,
     "default" : "pb-reg"
   } ],
   "tab" : "STYLE",
   "expanded" : false,
   "group_occurrence_meta" : null,
-  "display_width" : null,
   "type" : "group",
+  "display_width" : null,
   "default" : {
     "background_color" : "p",
     "padding_top" : "pt-reg",
@@ -64,8 +64,8 @@
   "required" : false,
   "locked" : false,
   "allow_new_line" : false,
-  "display_width" : null,
   "type" : "text",
+  "display_width" : null,
   "default" : "Integrated Lifecycle Execution"
 }, {
   "id" : "7bf1dda1-217c-e4f5-65a5-b03b218bd04a",
@@ -73,8 +73,8 @@
   "label" : "Copy",
   "required" : false,
   "locked" : false,
-  "display_width" : null,
   "type" : "richtext",
+  "display_width" : null,
   "default" : "Unlike traditional firms, Sovereign Assets maintains total control. We do not outsource our vision; we execute it through an unbroken chain of internal expertise."
 }, {
   "id" : "42f22bd3-4741-6a0d-ce3a-2d66a44774c2",
@@ -95,8 +95,8 @@
     "required" : false,
     "locked" : false,
     "allow_new_line" : false,
-    "display_width" : null,
     "type" : "text",
+    "display_width" : null,
     "default" : "Underwriting"
   }, {
     "id" : "b50bdfe2-3ebc-40cc-60be-95e7a36613a0",
@@ -104,15 +104,15 @@
     "label" : "Description",
     "required" : false,
     "locked" : false,
-    "display_width" : null,
     "type" : "richtext",
+    "display_width" : null,
     "default" : "Deep-dive data synthesis and proprietary algorithmic modeling to identify hidden value."
   } ],
   "tab" : "CONTENT",
   "expanded" : false,
   "group_occurrence_meta" : null,
-  "display_width" : null,
   "type" : "group",
+  "display_width" : null,
   "default" : [ {
     "title" : "Underwriting",
     "description" : "Deep-dive data synthesis and proprietary algorithmic modeling to identify hidden value."

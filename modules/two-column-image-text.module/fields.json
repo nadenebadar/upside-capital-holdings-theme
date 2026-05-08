@@ -1,0 +1,185 @@
+[ {
+  "id" : "4c0e9970-41bf-5511-f38d-7a19c93f1fcb",
+  "name" : "style",
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "b4fba23f-c5d2-0442-62e5-ccd97a4e4bb4",
+    "name" : "background_color",
+    "label" : "Background Color",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "p", "Primary" ], [ "s", "Secondary" ], [ "t", "Tertiary" ], [ "n", "Neutral" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "display_width" : null,
+    "default" : "p"
+  }, {
+    "id" : "a7bcf196-2ad7-832f-9a74-897a7283dee0",
+    "name" : "padding_top",
+    "label" : "Padding Top",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "pt-reg", "Regular" ], [ "pt-lg", "Large" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "display_width" : null,
+    "default" : "pt-reg"
+  }, {
+    "id" : "d9981fb6-9b7a-0c04-710b-f0c87b1380fd",
+    "name" : "padding_bottom",
+    "label" : "Padding Bottom",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "pb-reg", "Regular" ], [ "pb-lg", "Large" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "display_width" : null,
+    "default" : "pb-reg"
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "background_color" : "p",
+    "padding_top" : "pt-reg",
+    "padding_bottom" : "pb-reg"
+  }
+}, {
+  "id" : "78235b79-c9a2-77d2-11f3-e405b577d75f",
+  "name" : "heading",
+  "label" : "Heading",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "Risk Management: The Preservation Pillar"
+}, {
+  "id" : "70cf6ac1-bc1f-b24f-75ae-39c3dabbd2b9",
+  "name" : "copy",
+  "label" : "Copy",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "Institutional capital requires institutional discipline. Our risk management framework is not a secondary function—it is the foundation of every strategy. We utilize rigorous stress-testing, conservative LTV ratios, and exhaustive due diligence to ensure capital preservation across all market cycles."
+}, {
+  "id" : "5e2c6cf9-e1c5-3beb-0418-7dd7c68a3f0d",
+  "name" : "list",
+  "label" : "List",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 2
+  },
+  "children" : [ {
+    "id" : "28944ae8-653e-81b0-cb5d-88e3eb824fa2",
+    "name" : "icon",
+    "label" : "Icon",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://21306361.fs1.hubspotusercontent-na2.net/hubfs/21306361/shield-solid-full.svg",
+      "alt" : "shield-solid-full",
+      "loading" : "lazy",
+      "width" : 150,
+      "height" : 150,
+      "max_width" : 150,
+      "max_height" : 150
+    }
+  }, {
+    "id" : "3722d84c-4a44-bc0e-b62b-6ca236aa7749",
+    "name" : "title",
+    "label" : "Title",
+    "required" : false,
+    "locked" : false,
+    "allow_new_line" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "Structural Insulation"
+  }, {
+    "id" : "a65b116a-1d62-05b6-7704-37e7138af6bb",
+    "name" : "short_description",
+    "label" : "Short Description",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null,
+    "default" : "Every asset is held within an isolated SPV, protecting the broader portfolio from localized liabilities."
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : [ {
+    "icon" : {
+      "size_type" : "auto",
+      "src" : "https://21306361.fs1.hubspotusercontent-na2.net/hubfs/21306361/shield-solid-full.svg",
+      "alt" : "shield-solid-full",
+      "loading" : "lazy",
+      "width" : 150,
+      "height" : 150,
+      "max_width" : 150,
+      "max_height" : 150
+    },
+    "title" : "Structural Insulation",
+    "short_description" : "Every asset is held within an isolated SPV, protecting the broader portfolio from localized liabilities."
+  }, {
+    "icon" : {
+      "size_type" : "auto",
+      "src" : "https://21306361.fs1.hubspotusercontent-na2.net/hubfs/21306361/shield-solid-full.svg",
+      "alt" : "shield-solid-full",
+      "loading" : "lazy",
+      "width" : 150,
+      "height" : 150,
+      "max_width" : 150,
+      "max_height" : 150
+    },
+    "title" : "Structural Insulation",
+    "short_description" : "Every asset is held within an isolated SPV, protecting the broader portfolio from localized liabilities."
+  } ]
+}, {
+  "id" : "741935e2-a859-5b2d-3caf-593ce9eb6533",
+  "name" : "image_field",
+  "label" : "Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "display_width" : null,
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://21306361.fs1.hubspotusercontent-na2.net/hubfs/21306361/unnamed%20(6)-2.png",
+    "alt" : "A powerful, high-contrast close-up of a professional handshake in a formal setting. The image is shot in a classic, institutional style with deep shadows and strong light. The clothing is sharp, professional attire. The overall feeling is one of agreement, structural integrity, and the weight of serious business commitment, perfectly representing risk management and operational discipline.",
+    "loading" : "lazy",
+    "width" : 512,
+    "height" : 512,
+    "max_width" : 512,
+    "max_height" : 512
+  }
+} ]
