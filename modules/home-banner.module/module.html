@@ -33,6 +33,11 @@
     <div class="home-banner--gradient"></div>
     <div class="container">
         <div class="home-banner--content">
+            {% if module.title_tag %}
+                <div class="home-banner--tag mb-6 bg-color-s font-color-white">
+                    {{ module.title_tag }}
+                </div>
+            {% endif %}
             <h1 class="mb-8">
                 {{ module.header }}
             </h1>

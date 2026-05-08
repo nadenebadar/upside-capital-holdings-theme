@@ -19,3 +19,9 @@
 .home-banner--copy{
     max-width: 42rem;
 }
+.home-banner--tag {
+    display: inline-block;
+    padding: var(--space-1) var(--space-4);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
