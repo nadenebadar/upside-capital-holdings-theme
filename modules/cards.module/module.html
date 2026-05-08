@@ -1,3 +1,12 @@
+{% require_css %}
+    <style>
+        {% scope_css %}
+            .cards-mod .image-cover{
+                padding-top: calc(({{ module.style.cards_height / module.style.cards_width}}) * 100%);
+            }
+        {% end_scope_css %}
+    </style>
+{% end_require_css %}
 {% set titleColor = 'p' %}
 <div class="cards-mod bg-color-{{ module.style.background_color }} {{ module.style.padding_top }} {{ module.style.padding_bottom }}">
     <div class="container">
@@ -24,6 +33,11 @@
                 {% endif %}
                 </div>
                 <div class="cards-mod--desc">
+                    {% if item.tag %}
+                    <div class="cards-mod--tag mb-4 h6 font-color-s">
+                        {{ item.tag }}
+                    </div>
+                    {% endif %}
                     <h3 class="h4 mb-4 font-color-{{ titleColor }}">{{ item.title }}</h3>
                     <div>
                         {{ item.description }}

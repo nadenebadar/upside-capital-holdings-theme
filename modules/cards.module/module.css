@@ -27,6 +27,9 @@
     opacity: 0.2;
     transition-duration: 500ms;
 }
+.cards-mod .cards-mod--item{
+    background: var(--color-white);
+}
 .cards-mod .cards-mod--item:hover .image-cover::after{
     opacity: 0.4;
 }
@@ -55,4 +58,8 @@
 }
 .cards-mod .cards-mod--item:nth-child(even) {
     background: var(--color-n);
+}
+.cards-mod--tag {
+    text-transform: uppercase;
+    letter-spacing: .1em;
 }
