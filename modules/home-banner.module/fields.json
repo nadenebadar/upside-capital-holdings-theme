@@ -144,6 +144,16 @@
     "type" : "choice",
     "display_width" : null,
     "default" : "p"
+  }, {
+    "id" : "58957442-f5a3-b11b-5ce1-285ce09f0f54",
+    "name" : "inner_page_banner",
+    "label" : "Inner Page Banner",
+    "required" : false,
+    "locked" : false,
+    "display" : "checkbox",
+    "type" : "boolean",
+    "display_width" : null,
+    "default" : false
   } ],
   "tab" : "STYLE",
   "expanded" : false,
@@ -175,7 +185,8 @@
       "color" : "#000F1E",
       "opacity" : 40
     },
-    "background_color" : "p"
+    "background_color" : "p",
+    "inner_page_banner" : false
   }
 }, {
   "id" : "1136c175-ddcb-6f7f-1fbc-95ab51cfc246",

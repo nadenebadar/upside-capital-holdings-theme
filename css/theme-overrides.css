@@ -197,6 +197,10 @@ h1,
   .h1{
     font-size: {{ h1_font.size ~ h1_font.size_unit }};
   }
+
+  h1.inner-banner-h1{
+    font-size: 4.5rem;
+  }
 }
 
 h2,
