@@ -1,0 +1,432 @@
+[ {
+  "id" : "87f9f9f9-59fb-5e8d-d77c-a7d0e9513c3b",
+  "name" : "title_tag",
+  "label" : "Title Tag",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : ""
+}, {
+  "id" : "cee3e58f-6919-c701-adef-297c4fe7e3e1",
+  "name" : "header",
+  "label" : "Header",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "Global Portfolio"
+}, {
+  "id" : "1c726129-661e-2062-2dc6-6f5c02f90b96",
+  "name" : "copy",
+  "label" : "Copy",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "Commanding a diversified array of high-performing real estate assets across primary global markets. Our portfolio is engineered for long-term appreciation and operational resilience."
+}, {
+  "id" : "4c0e9970-41bf-5511-f38d-7a19c93f1fcb",
+  "name" : "style",
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "543dec11-dec9-5c8b-59cc-18ea7a1dca73",
+    "name" : "heading",
+    "label" : "Heading",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "a808816a-2847-1750-36d0-2777759de9fe",
+      "name" : "color_field",
+      "label" : "Color",
+      "required" : false,
+      "locked" : false,
+      "type" : "color",
+      "display_width" : null,
+      "default" : {
+        "color" : "#ffffff",
+        "opacity" : 100
+      }
+    }, {
+      "id" : "a677e904-cdb1-3dfd-63e7-ad0c33bcb887",
+      "name" : "highlight_color",
+      "label" : "Highlight Color",
+      "required" : false,
+      "locked" : false,
+      "type" : "color",
+      "display_width" : null,
+      "default" : {
+        "color" : "#316b00",
+        "opacity" : 100
+      }
+    } ],
+    "tab" : "STYLE",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "color_field" : {
+        "color" : "#ffffff",
+        "opacity" : 100
+      },
+      "highlight_color" : {
+        "color" : "#316b00",
+        "opacity" : 100
+      }
+    }
+  }, {
+    "id" : "7c90baff-0002-3c73-c925-4901cf367841",
+    "name" : "copy_color",
+    "label" : "Copy Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "display_width" : null,
+    "default" : {
+      "color" : "#d9eaff",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "9f9414ea-1592-7eb9-cdf2-761da089ddf7",
+    "name" : "button_color",
+    "label" : "Button Color",
+    "required" : false,
+    "locked" : false,
+    "display" : "pill",
+    "choices" : [ [ "primary", "Primary" ], [ "secondary", "Secondary" ], [ "tertiary", "Tertiary" ], [ "neutral", "Neutral" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "display_width" : null,
+    "default" : "secondary"
+  }, {
+    "id" : "10f59c04-4446-43b2-0094-f95481829a48",
+    "name" : "backgroundimage_field",
+    "label" : "Background image",
+    "required" : false,
+    "locked" : false,
+    "type" : "backgroundimage",
+    "display_width" : null,
+    "default" : {
+      "background_position" : "MIDDLE_CENTER",
+      "background_size" : "cover",
+      "src" : "https://21306361.fs1.hubspotusercontent-na2.net/hubfs/21306361/image-asset.jpeg"
+    }
+  }, {
+    "id" : "2eb07571-5501-d5cb-16c4-8da535156a31",
+    "name" : "background_gradient_color",
+    "label" : "Background Gradient Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "display_width" : null,
+    "default" : {
+      "color" : "#000F1E",
+      "opacity" : 40
+    }
+  }, {
+    "id" : "0f92a339-4a63-a86a-b273-bf640755654c",
+    "name" : "background_color",
+    "label" : "Background Color",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "p", "Primary" ], [ "s", "Secondary" ], [ "t", "Tertiary" ], [ "n", "Neutral" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "display_width" : null,
+    "default" : "p"
+  }, {
+    "id" : "58957442-f5a3-b11b-5ce1-285ce09f0f54",
+    "name" : "inner_page_banner",
+    "label" : "Inner Page Banner",
+    "required" : false,
+    "locked" : false,
+    "display" : "checkbox",
+    "type" : "boolean",
+    "display_width" : null,
+    "default" : false
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "heading" : {
+      "color_field" : {
+        "color" : "#ffffff",
+        "opacity" : 100
+      },
+      "highlight_color" : {
+        "color" : "#316b00",
+        "opacity" : 100
+      }
+    },
+    "copy_color" : {
+      "color" : "#d9eaff",
+      "opacity" : 100
+    },
+    "button_color" : "secondary",
+    "backgroundimage_field" : {
+      "background_position" : "MIDDLE_CENTER",
+      "background_size" : "cover",
+      "src" : "https://21306361.fs1.hubspotusercontent-na2.net/hubfs/21306361/image-asset.jpeg"
+    },
+    "background_gradient_color" : {
+      "color" : "#000F1E",
+      "opacity" : 40
+    },
+    "background_color" : "p",
+    "inner_page_banner" : false
+  }
+}, {
+  "id" : "1136c175-ddcb-6f7f-1fbc-95ab51cfc246",
+  "name" : "button",
+  "label" : "Button",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "abdf6147-4c48-51e3-82f3-cc5c21a2d915",
+    "name" : "text",
+    "label" : "Text",
+    "required" : false,
+    "locked" : false,
+    "allow_new_line" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : ""
+  }, {
+    "id" : "fb9c5acc-92dc-ed04-70a4-d739b55a9634",
+    "name" : "link_field",
+    "label" : "Link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER", "PAYMENT" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "display_width" : null,
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "text" : "",
+    "link_field" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }
+}, {
+  "id" : "76735624-f0e9-923e-2226-0821cdb0e0f6",
+  "name" : "statistics",
+  "label" : "Statistics",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : "5db73eb5-ab21-bcf0-52cc-eca0c0e633aa",
+    "default" : 4
+  },
+  "children" : [ {
+    "id" : "7677d775-5e28-5801-ee30-8e0ddee3acf1",
+    "name" : "prefix",
+    "label" : "Prefix",
+    "required" : false,
+    "locked" : false,
+    "allow_new_line" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "$"
+  }, {
+    "id" : "7a987825-82a0-290a-a114-ac686a773c22",
+    "name" : "number_field",
+    "label" : "Number",
+    "required" : false,
+    "locked" : false,
+    "display" : "text",
+    "step" : 1,
+    "type" : "number",
+    "display_width" : null,
+    "default" : 12.4
+  }, {
+    "id" : "137e92e7-f017-8b60-0595-f6a77de4e534",
+    "name" : "suffix",
+    "label" : "Suffix",
+    "required" : false,
+    "locked" : false,
+    "allow_new_line" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "B"
+  }, {
+    "id" : "5db43996-e986-8994-36bb-70d20d14a6f2",
+    "name" : "tag",
+    "label" : "Tag",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "94ed798b-d6c4-53b4-07f9-cc07c42b2793",
+      "name" : "text",
+      "label" : "Text",
+      "required" : false,
+      "locked" : false,
+      "allow_new_line" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "AUM Growth"
+    }, {
+      "id" : "1e168e82-b5e1-0962-19fe-1af517bd698c",
+      "name" : "icon",
+      "label" : "Icon",
+      "required" : false,
+      "locked" : false,
+      "responsive" : true,
+      "resizable" : true,
+      "show_loading" : false,
+      "type" : "image",
+      "display_width" : null,
+      "default" : {
+        "size_type" : "auto",
+        "src" : "https://21306361.fs1.hubspotusercontent-na2.net/hubfs/21306361/arrow-trend-up-solid-full.svg",
+        "alt" : "arrow-trend-up-solid-full",
+        "loading" : "lazy",
+        "width" : 150,
+        "height" : 150,
+        "max_width" : 150,
+        "max_height" : 150
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "text" : "AUM Growth",
+      "icon" : {
+        "size_type" : "auto",
+        "src" : "https://21306361.fs1.hubspotusercontent-na2.net/hubfs/21306361/arrow-trend-up-solid-full.svg",
+        "alt" : "arrow-trend-up-solid-full",
+        "loading" : "lazy",
+        "width" : 150,
+        "height" : 150,
+        "max_width" : 150,
+        "max_height" : 150
+      }
+    }
+  }, {
+    "id" : "5db73eb5-ab21-bcf0-52cc-eca0c0e633aa",
+    "name" : "title",
+    "label" : "Title",
+    "required" : false,
+    "locked" : false,
+    "allow_new_line" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "Assets Under Management"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : [ {
+    "prefix" : "$",
+    "number_field" : 12.4,
+    "suffix" : "B",
+    "tag" : {
+      "text" : "AUM Growth",
+      "icon" : {
+        "size_type" : "auto",
+        "src" : "https://21306361.fs1.hubspotusercontent-na2.net/hubfs/21306361/arrow-trend-up-solid-full.svg",
+        "alt" : "arrow-trend-up-solid-full",
+        "loading" : "lazy",
+        "width" : 150,
+        "height" : 150,
+        "max_width" : 150,
+        "max_height" : 150
+      }
+    },
+    "title" : "Assets Under Management"
+  }, {
+    "prefix" : "$",
+    "number_field" : 12.4,
+    "suffix" : "B",
+    "tag" : {
+      "text" : "AUM Growth",
+      "icon" : {
+        "size_type" : "auto",
+        "src" : "https://21306361.fs1.hubspotusercontent-na2.net/hubfs/21306361/arrow-trend-up-solid-full.svg",
+        "alt" : "arrow-trend-up-solid-full",
+        "loading" : "lazy",
+        "width" : 150,
+        "height" : 150,
+        "max_width" : 150,
+        "max_height" : 150
+      }
+    },
+    "title" : "Assets Under Management"
+  }, {
+    "prefix" : "$",
+    "number_field" : 12.4,
+    "suffix" : "B",
+    "tag" : {
+      "text" : "AUM Growth",
+      "icon" : {
+        "size_type" : "auto",
+        "src" : "https://21306361.fs1.hubspotusercontent-na2.net/hubfs/21306361/arrow-trend-up-solid-full.svg",
+        "alt" : "arrow-trend-up-solid-full",
+        "loading" : "lazy",
+        "width" : 150,
+        "height" : 150,
+        "max_width" : 150,
+        "max_height" : 150
+      }
+    },
+    "title" : "Assets Under Management"
+  }, {
+    "prefix" : "$",
+    "number_field" : 12.4,
+    "suffix" : "B",
+    "tag" : {
+      "text" : "AUM Growth",
+      "icon" : {
+        "size_type" : "auto",
+        "src" : "https://21306361.fs1.hubspotusercontent-na2.net/hubfs/21306361/arrow-trend-up-solid-full.svg",
+        "alt" : "arrow-trend-up-solid-full",
+        "loading" : "lazy",
+        "width" : 150,
+        "height" : 150,
+        "max_width" : 150,
+        "max_height" : 150
+      }
+    },
+    "title" : "Assets Under Management"
+  } ]
+} ]

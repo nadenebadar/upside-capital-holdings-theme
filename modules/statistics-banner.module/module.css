@@ -1,0 +1,48 @@
+.statistics-banner{
+    position: relative;
+    min-height: 716px;
+}
+.statistics-banner--gradient, .statistics-banner--bg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.statistics-banner--bg{
+    opacity: 0.6;
+}
+.statistics-banner--content{
+    position: relative;
+    max-width: 64rem;
+}
+.statistics-banner--copy{
+    max-width: 42rem;
+}
+.statistics-banner--tag {
+    display: inline-block;
+    padding: var(--space-1) var(--space-4);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+.statistics-banner--stats{
+    position: relative;
+    gap: 3rem;
+}
+.statistics-banner .stat-item--tag img {
+    width: 14px;
+}
+.statistics-banner .stat-item--tag span{
+    line-height: 0;
+}
+.statistics-banner .stat-item--tag {
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--color-s);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.statistics-banner .stat-item--number{
+    line-height: 1;
+}

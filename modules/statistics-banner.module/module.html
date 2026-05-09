@@ -1,0 +1,112 @@
+{% require_css %}
+    <style>
+    {% scope_css %}
+    .statistics-banner--bg{
+        {{ module.style.backgroundimage_field.css }}
+    }
+    .statistics-banner h1,
+    .stat-item--number{
+        {% if module.style.heading.color_field.color %}
+        color: rgba({{ module.style.heading.color_field.color|convert_rgb }},{{ module.style.heading.color_field.opacity/100 }});
+        {% endif %}
+    }
+    .statistics-banner h1 span{
+        {% if module.style.heading.highlight_color.color %}
+        color: rgba({{ module.style.heading.highlight_color.color|convert_rgb }},{{ module.style.heading.highlight_color.opacity/100 }});
+        {% endif %}
+    }
+    .statistics-banner--gradient{
+        {% if module.style.background_gradient_color.color %}
+            background-image: linear-gradient(to top right, #000f1e , rgba({{ module.style.background_gradient_color.color|convert_rgb }},{{ module.style.background_gradient_color.opacity/100 }}) , transparent)
+        {% endif %}
+    }
+    .statistics-banner--copy,
+    .stat-item--title{
+        {% if module.style.copy_color.color %}
+        color: rgba({{ module.style.copy_color.color|convert_rgb }},{{ module.style.copy_color.opacity/100 }});
+        {% endif %}
+    }
+    {% end_scope_css %}
+    </style>
+{% end_require_css %}
+{% set headingSize = 'h1' %}
+{% if module.style.inner_page_banner %}
+	{% set headingSize = 'inner-banner-h1' %}
+{% endif %}
+<div class="statistics-banner d-flex flex-column justify-content-center pt-lg pb-lg bg-color-{{ module.style.background_color }}" >
+    <div class="statistics-banner--bg"></div>
+    <div class="statistics-banner--gradient"></div>
+    <div class="container">
+        <div class="grid grid--2 grid--gap-5">
+            <div class="statistics-banner--content">
+                {% if module.title_tag %}
+                    <div class="statistics-banner--tag mb-6 bg-color-s font-color-white">
+                        {{ module.title_tag }}
+                    </div>
+                {% endif %}
+                <h1 class="mb-8 {{ headingSize }}">
+                    {{ module.header }}
+                </h1>
+                <div class="h5 statistics-banner--copy">
+                    {{ module.copy }}
+                </div>
+                {% if module.button.text %}
+                <div class="statistics-banner--cta">
+                    {% set href = module.button.link_field.url.href %}
+                    {% if module.button.link_field.url.type is equalto "EMAIL_ADDRESS" %}
+                    {% set href = "mailto:" + href %}
+                    {% elif module.button.link_field.url.type is equalto "PHONE_NUMBER" %}
+                    {% set href = "tel:" + href %}
+                    {% endif %}
+                    <a
+                    {% if module.button.link_field.url.type is equalto "CALL_TO_ACTION"  %}
+                        href="{{ href }}" {# The href here is not escaped as it is not editable and functions as a JavaScript call to the associated CTA #}
+                    {% else %}
+                        href="{{ href|escape_url }}"
+                    {% endif %}
+                    {% if module.button.link_field.open_in_new_tab %}
+                        target="_blank"
+                    {% endif %}
+                    {% if module.button.link_field.rel %}
+                        rel="{{ module.button.link_field.rel|escape_attr }}"
+                    {% endif %}
+                    class="button button--{{ module.style.button_color }} mt-5"
+                    >
+                    {{ module.button.text }}
+                    </a>
+                </div>
+                {% endif %}
+            </div>
+            <div class="statistics-banner--stats grid grid--2">
+                {% for item in module.statistics %}
+                    <div class="stat-item">
+                        {% if item.tag.text %}
+                        <div class="stat-item--tag h6 mb-2">
+                            <span>
+                            {% if item.tag.icon.src %}
+                                {% set sizeAttrs = 'width="{{ item.tag.icon.width|escape_attr }}" height="{{ item.tag.icon.height|escape_attr }}"' %}
+                                {% if item.tag.icon.size_type == 'auto' %}
+                                    {% set sizeAttrs = 'width="{{ item.tag.icon.width|escape_attr }}" height="{{ item.tag.icon.height|escape_attr }}" style="max-width: 100%; height: auto;"' %}
+                                {% elif item.tag.icon.size_type == 'auto_custom_max' %}
+                                    {% set sizeAttrs = 'width="{{ item.tag.icon.max_width|escape_attr }}" height="{{ item.tag.icon.max_height|escape_attr }}" style="max-width: 100%; height: auto;"' %}
+                                {% endif %}
+                                {% set loadingAttr = item.tag.icon.loading != 'disabled' ? 'loading="{{ item.tag.icon.loading|escape_attr }}"' : '' %}
+                                <img src="{{ item.tag.icon.src|escape_url }}" alt="{{ item.tag.icon.alt|escape_attr }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                            {% endif %}
+                            </span>
+                            {{ item.tag.text }}
+                        </div>
+                        {% endif %}
+                        <div class="stat-item--number h3">
+                            {{ item.prefix }}<span>{{ item.number_field }}</span>{{ item.suffix }}
+                        </div>
+                        <div class="stat-item--title mt-2">
+                            {{ item.title }}
+                        </div>
+                    </div>                    
+                {% endfor %}
+            </div>
+        </div>
+        
+    </div>
+</div>
