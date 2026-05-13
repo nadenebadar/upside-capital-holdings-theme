@@ -154,7 +154,6 @@
 body {
   {{ body_font.style }};
   color: {{ body_font.color }};
-  font-size: {{ body_font.size ~ body_font.size_unit }};
   line-height: {{ body_line_height }}
 }
 
@@ -577,7 +576,7 @@ button:active,
 .hs-pagination__link:focus .hs-pagination__link-text,
 .hs-pagination__link--number:hover,
 .hs-pagination__link--number:focus {
-  color: {{ color_variant(body_font.color, -40) }};
+  color: var(--color-s);
 }
 
 .hs-pagination__link:active .hs-pagination__link-text,

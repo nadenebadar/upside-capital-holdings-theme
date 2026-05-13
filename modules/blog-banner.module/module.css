@@ -1,0 +1,37 @@
+.blog-banner{
+    padding-top: calc(8rem + 95px);
+    position: relative;
+}
+.blog-banner--gradient, .blog-banner--bg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.blog-banner--bg{
+    opacity: 0.6;
+}
+.blog-banner--content{
+    position: relative;
+    max-width: 64rem;
+}
+.blog-banner--copy{
+    max-width: 42rem;
+}
+.blog-banner--tag {
+    display: inline-block;
+    padding: var(--space-1) var(--space-4);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+.blog-banner .button--link{
+    font-size: 0.875rem;
+    color: var(--color-white);
+}
+.blog-banner .button--link span{
+    transition: all .3s;
+}
+.blog-banner .button--link:hover span{
+    margin-left: 10px;
+}

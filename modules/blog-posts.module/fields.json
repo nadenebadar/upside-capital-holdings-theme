@@ -1,0 +1,20 @@
+[ {
+  "id" : "9a9f77a6-e0c3-4d52-0e7d-d77ccfceb647",
+  "name" : "heading",
+  "label" : "Heading",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "Market Analysis & Platform Updates"
+}, {
+  "id" : "d19badeb-e0c5-9b14-a007-c654fed40d9e",
+  "name" : "description",
+  "label" : "Description",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "Our multi-disciplinary team provides rigorous analysis of global markets, focusing on the intersection of capital flows and architectural transformation."
+} ]

@@ -1,0 +1,38 @@
+{% set titleColor = 'white' %}
+{% set copyColor =  'w-grey' %}
+{% require_css %}
+    <style>
+        {% scope_css %}
+            .blog-subscription-form{
+                {{ module.style.backgroundimage_field.css }}
+            }
+        {% end_scope_css %}
+    </style>
+{% end_require_css %}
+<div class="blog-subscription-form bg-color-{{ module.style.background_color }} {{ module.style.padding_top }} {{ module.style.padding_bottom }}">
+    <div class="container">
+        <div class="row justify-content-between align-items-center">
+            <div class="col-lg-5 col-md-6">
+                <div class="blog-subscription-form--content">
+                    <h2 class="h3 mb-8 font-color-{{ titleColor }}">
+                        {{ module.heading }}
+                    </h2>
+                    <div class="font-color-{{ copyColor }} h5 blog-subscription-form--copy mb-12">
+                    {{ module.copy }}
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+            {% form
+                form_to_use="{{ module.form_field.form_id }}"
+                response_response_type="{{ module.form_field.response_type }}"
+                response_message="{{ module.form_field.message }}"
+                response_redirect_id="{{ module.form_field.redirect_id }}"
+                response_redirect_url="{{module.form_field.redirect_url}}"
+                gotowebinar_webinar_key="{{ module.form_field.gotowebinar_webinar_key }}"
+            %}
+            </div> 
+        </div>
+        
+    </div>
+</div>

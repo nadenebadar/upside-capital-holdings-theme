@@ -1,0 +1,125 @@
+[ {
+  "id" : "4c0e9970-41bf-5511-f38d-7a19c93f1fcb",
+  "name" : "style",
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "204b137c-c7e2-ab9c-6801-5a17d18366ca",
+    "name" : "button_color",
+    "label" : "Button Color",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "button--primary", "Primary" ], [ "button--secondary", "Secondary" ], [ "button--tertiary", "Tertiary" ], [ "button--neutral", "Neutral" ], [ "button--white", "White" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "display_width" : null,
+    "default" : "button--white"
+  }, {
+    "id" : "a7bcf196-2ad7-832f-9a74-897a7283dee0",
+    "name" : "padding_top",
+    "label" : "Padding Top",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "pt-reg", "Regular" ], [ "pt-lg", "Large" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "display_width" : null,
+    "default" : "pt-reg"
+  }, {
+    "id" : "d9981fb6-9b7a-0c04-710b-f0c87b1380fd",
+    "name" : "padding_bottom",
+    "label" : "Padding Bottom",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "pb-reg", "Regular" ], [ "pb-lg", "Large" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "display_width" : null,
+    "default" : "pb-reg"
+  }, {
+    "id" : "b4fba23f-c5d2-0442-62e5-ccd97a4e4bb4",
+    "name" : "background_color",
+    "label" : "Background Color",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "p", "Primary" ], [ "s", "Secondary" ], [ "t", "Tertiary" ], [ "n", "Neutral" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "display_width" : null,
+    "default" : "p"
+  }, {
+    "id" : "9cb19e59-7178-be2b-1391-91bf2d9a9251",
+    "name" : "backgroundimage_field",
+    "label" : "Background image",
+    "required" : false,
+    "locked" : false,
+    "type" : "backgroundimage",
+    "display_width" : null,
+    "default" : {
+      "background_position" : "MIDDLE_CENTER",
+      "background_size" : "cover",
+      "src" : "https://21306361.fs1.hubspotusercontent-na2.net/hubfs/21306361/unnamed%20(6)-1.png"
+    }
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "button_color" : "button--white",
+    "padding_top" : "pt-reg",
+    "padding_bottom" : "pb-reg",
+    "background_color" : "p",
+    "backgroundimage_field" : {
+      "background_position" : "MIDDLE_CENTER",
+      "background_size" : "cover",
+      "src" : "https://21306361.fs1.hubspotusercontent-na2.net/hubfs/21306361/unnamed%20(6)-1.png"
+    }
+  }
+}, {
+  "id" : "932378f3-e479-85c5-ca51-9f01a62bcae2",
+  "name" : "heading",
+  "label" : "Heading",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "Institutional Intelligence"
+}, {
+  "id" : "7bf1dda1-217c-e4f5-65a5-b03b218bd04a",
+  "name" : "copy",
+  "label" : "Copy",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "Join our mailing list to receive exclusive market intelligence, quarterly performance summaries, and invitations to our institutional investor symposiums."
+}, {
+  "id" : "f0325b70-af54-4f8d-975b-3cc9e001bc89",
+  "name" : "form_field",
+  "label" : "Form",
+  "required" : false,
+  "locked" : false,
+  "embed_versions" : [ "v2", "v4" ],
+  "type" : "form",
+  "display_width" : null,
+  "default" : {
+    "response_type" : "inline",
+    "message" : "Thanks for submitting the form."
+  }
+} ]

@@ -1,0 +1,78 @@
+.blog-subscription-form{
+    position: relative;
+}
+.blog-subscription-form .blog-subscription-form--content {
+    max-width: 56rem;
+    margin: 0 auto;
+    position: relative;
+}
+
+.blog-subscription-form .blog-subscription-form--copy{
+    max-width: 42rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.blog-subscription-form::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.8;
+}
+.blog-subscription-form.bg-color-p.blog-subscription-form::before{
+    background-color: var(--color-p);
+}
+.blog-subscription-form.bg-color-s.blog-subscription-form::before{
+    background-color: var(--color-s);
+}
+.blog-subscription-form.bg-color-t.blog-subscription-form::before{
+    background-color: var(--color-t);
+}
+.blog-subscription-form.bg-color-n.blog-subscription-form::before{
+    background-color: var(--color-n);
+}
+.blog-subscription-form .hsfc-Button{
+    line-height: 1.25rem!important;
+    font-size: 0.875rem!important;
+    text-transform: uppercase!important;
+    letter-spacing: 0.1em!important;
+    padding-top: 1.25rem!important;
+    padding-right: 2.5rem!important;
+    padding-bottom: 1.25rem!important;
+    padding-left: 2.5rem!important;
+    font-family: Inter, sans-serif!important;
+    font-style: normal!important;
+    font-weight: 700!important;
+    background: var(--color-s)!important;
+    color: var(--color-white)!important;
+    width: 100%!important;
+}
+.blog-subscription-form .hsfc-Button:hover{
+    background: var(--color-white)!important;
+    color: var(--color-p)!important;
+    transform: none!important;
+}
+.blog-subscription-form .hsfc-NavigationRow{
+    margin-top: 0!important;
+}
+.blog-subscription-form .hsfc-RichText {
+    font-size: 0.600rem !important;
+    line-height: 1.25rem;
+    font-family: 'Manrope', sans-serif !important;
+    font-weight: 700;
+    text-transform: uppercase;    
+}
+.blog-subscription-form .hsfc-RichText p {
+    margin-bottom: 0!important;
+}
+.blog-subscription-form.bg-color-p .hsfc-RichText{
+    color: var(--color-white) !important;
+}
+.blog-subscription-form [data-hsfc-id=Renderer] .hsfc-Step .hsfc-Step__Content{
+    padding: 0;
+}
+@media screen and (min-width: 768px){
+    
+}

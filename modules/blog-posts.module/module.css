@@ -1,0 +1,167 @@
+.blog-posts .image-cover {
+    overflow: hidden;
+    padding-top: 65%;
+    position: relative;
+}
+.blog-posts .image-cover::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: var(--color-black);
+    opacity: 0.2;
+    transition-duration: 500ms;
+}
+.blog-posts .cards-mod--item{
+    background: var(--color-white);
+}
+.blog-posts .cards-mod--item:hover .image-cover::after{
+    opacity: 0.4;
+}
+.blog-posts .image-cover > img {
+    position: absolute;
+    top: 0;
+    width: 110%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    transition-duration: 700ms; 
+    left: 50%;
+    transform: translateX(-50%);
+}
+.blog-posts .cards-mod--item:hover .image-cover > img{
+    transform: translate(-50%,0) rotate(0) skewX(0) skewY(0) scaleX(1.05) scaleY(1.05)
+}
+.blog-posts .cards-mod--desc {
+    padding: var(--space-10);
+}
+
+.blog-posts .cards-mod--item:nth-child(even) {
+    background: var(--color-n);
+    
+}
+.blog-posts .cards-mod--item:not(:nth-child(3n)) {
+    border-right: 1px solid #f7f9ff;
+}
+.blog-posts .cards-mod--tag {
+    text-transform: uppercase;
+    letter-spacing: .1em;
+}
+.blog-posts .button--link span{
+    transition: all .3s;
+}
+.blog-posts .button--link:hover span{
+    margin-left: 5px;
+}
+/* Pagination */
+
+.blog-posts .hs-pagination {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Pagination links */
+
+.blog-posts .hs-pagination__link {
+  align-items: center;
+  display: flex;
+  margin-right: 0.5rem;
+}
+
+.blog-posts .hs-pagination__link:last-child {
+  margin-right: 0;
+}
+
+.blog-posts .hs-pagination__link,
+.blog-posts .hs-pagination__link:hover,
+.blog-posts .hs-pagination__link:focus,
+.blog-posts .hs-pagination__link:active {
+  text-decoration: none;
+}
+
+.blog-posts .hs-pagination__link--text-and-icon.hs-pagination__link--first > .hs-pagination__link-icon,
+.blog-posts .hs-pagination__link--text-and-icon.hs-pagination__link--prev > .hs-pagination__link-icon {
+  margin-right: 0.25rem;
+}
+
+.blog-posts .hs-pagination__link--text-and-icon.hs-pagination__link--last > .hs-pagination__link-icon,
+.blog-posts .hs-pagination__link--text-and-icon.hs-pagination__link--next > .hs-pagination__link-icon {
+  margin-left: 0.25rem;
+}
+
+.blog-posts .hs-pagination__link-icon {
+  display: inline-flex;
+}
+
+.blog-posts .hs-pagination__link-icon svg {
+  height: 16px;
+  width: 16px;
+}
+
+.blog-posts .hs-pagination__link--number {
+  padding: 0 .25rem;
+}
+.blog-posts .hs-pagination__link--number.hs-pagination__link--active{
+    font-weight: 700;
+    border-bottom: 2px solid var(--color-s);
+    color: var(--color-s);
+}
+.blog-posts .hs-pagination__link:hover .hs-pagination__link-icon svg{
+    fill: var(--color-s);
+}
+
+@media (max-width: 767px) {
+  .blog-posts .hs-pagination__show-for-sr--mobile {
+    border: 0 !important;
+    clip: rect(0, 0, 0, 0) !important;
+    height: 1px !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+    position: absolute !important;
+    white-space: nowrap !important;
+    width: 1px !important;
+  }
+}
+.blog-posts .blog-posts--filter{
+    position: relative;
+}
+.blog-posts .blog-posts--filter .label{
+    align-items: center;
+    display: flex;
+    padding: var(--space-1) var(--space-2);
+    border: 2px solid var(--color-s);
+}
+.blog-posts .blog-posts--filter .label svg {
+    width: 20px;
+    margin-left: 10px;
+    fill: var(--color-s);
+}
+.blog-posts .blog-posts--filter .dropdown-menu {
+    background: var(--color-white);
+    display: none;
+    padding: var(--space-2) 0;
+    position: absolute;
+    right: 0;
+    width: max-content;
+    z-index: 1;
+    border: 1px solid #f7f9ff;
+    top: calc(100% + 2px);
+    cursor: pointer
+}
+.blog-posts .blog-posts--filter:hover .dropdown-menu{
+    display: block;
+}
+.blog-posts .blog-posts--filter .dropdown-menu a{
+    color: var(--color-p);
+    display: block;
+    font-size: .875rem;
+    text-decoration: none;
+    padding: var(--space-1) var(--space-2);
+}
+.blog-posts .blog-posts--filter .dropdown-menu a:hover{
+    color: var(--color-s);
+}

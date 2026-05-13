@@ -1,0 +1,222 @@
+<div class="blog-posts bg-color-n pt-reg pb-reg">
+    <div class="container">
+        <div class="row blog-posts--intro mb-10 justify-content-between align-items-end">
+            <div class="col-md-7">
+                <h2 class="h3 font-color-p mb-3">
+                    {{ module.heading }}
+                </h2>
+                <div>
+                    {{ module.description }}
+                </div>
+            </div>
+            <div class="col-md-auto">
+                <div class="blog-posts--filter">                
+                    <div class="label font-color-p">
+                        Filter by Tags
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M297.4 470.6C309.9 483.1 330.2 483.1 342.7 470.6L534.7 278.6C547.2 266.1 547.2 245.8 534.7 233.3C522.2 220.8 501.9 220.8 489.4 233.3L320 402.7L150.6 233.4C138.1 220.9 117.8 220.9 105.3 233.4C92.8 245.9 92.8 266.2 105.3 278.7L297.3 470.7z"/></svg>
+                     
+                    </div>
+                    <div class="dropdown-menu">
+                        {% set tags = blog_tags('default') %}
+                        {% for tag in tags %}
+                        <a href="{{ blog_tag_url(group.id, tag.slug) }}">
+                            {{ tag.name }} ({{ tag.live_posts }})
+                        </a>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid grid--3 grid--gap--0">
+            {% for content in contents %}
+                <div class="cards-mod--item">
+                    <div class="image-cover">                        
+                        <img src="{{ content.featured_image|escape_url }}" alt="{{ content.featured_image_alt_text|escape_attr }}" loading="lazy">
+                    </div>
+                    <div class="cards-mod--desc">
+                        <div class="cards-mod--tag mb-4 h6 font-color-s">
+                            {{ content.tag_list[0] }}
+                        </div>
+                        <h3 class="h4 mb-4 font-color-p">{{ content.title }}</h3>
+                        <div>
+                            {{ content.post_summary }}
+                        </div>                       
+                            
+                        <a href="{{ content.absolute_url }}"
+                        
+                        class="mt-6 button--link"
+                        >
+                            Read More
+                            <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M566.6 342.6C579.1 330.1 579.1 309.8 566.6 297.3L406.6 137.3C394.1 124.8 373.8 124.8 361.3 137.3C348.8 149.8 348.8 170.1 361.3 182.6L466.7 288L96 288C78.3 288 64 302.3 64 320C64 337.7 78.3 352 96 352L466.7 352L361.3 457.4C348.8 469.9 348.8 490.2 361.3 502.7C373.8 515.2 394.1 515.2 406.6 502.7L566.6 342.7z"/></svg></span>
+                        </a>
+                    </div>
+                    
+                </div>
+            {% endfor %}
+        </div>
+
+        {% set show_numbers = true %}
+        {% set show_next_and_previous_labels = true %}
+
+        {% set show_next_and_previous_arrows = true %}
+        {% set show_first_and_last_labels = true %}
+
+        {% set show_first_and_last_arrows = true %}
+
+        {% set first_page_link = blog_page_link(1)|cut("/page/1") %}
+
+        {# Mock data for editor #}
+
+        {% if is_in_editor %}
+        {% set total_page_count = 6 %}
+        {% set current_page_num = 2 %}
+        {% set next_page_num = true %}
+        {% set last_page_num = true %}
+        {% else %}
+        {% set total_page_count = contents.total_page_count %}
+        {% endif %}
+
+
+        {# Pagination #}
+
+        {% if total_page_count > 1 %}
+        <nav aria-label="Pagination navigation" role="navigation" class="hs-pagination mt-10">
+            {# First page link #}
+
+            {% if last_page_num and (show_first_and_last_arrows or show_first_and_last_labels) %}
+            <a
+                class="hs-pagination__link hs-pagination__link--first {{ "hs-pagination__link--text-and-icon" if show_first_and_last_arrows and show_first_and_last_labels }}"
+                href="{{ first_page_link|escape_url }}"
+            >
+                {% if show_first_and_last_arrows %}
+                {% icon "hs_first_icon"
+                    extra_classes="hs-pagination__link-icon",
+                    name="angle-double-left",
+                    purpose="decorative",
+                    style="SOLID",
+                    unicode="f100" %}
+                {% endif %}
+                {% if show_first_and_last_labels %}
+                <span class="hs-pagination__link-text hs-pagination__show-for-sr--mobile">
+                    First
+                </span>
+                {% endif %}
+            </a>
+            {% endif %}
+
+            {# Previous page link #}
+
+            {% if last_page_num and (show_next_and_previous_arrows or show_next_and_previous_labels) %}
+            {% set last_blog_page_link = blog_page_link(last_page_num) %}
+            {% set prev_page_link = current_page_num == 2 ? first_page_link : last_blog_page_link %}
+            <a
+                class="hs-pagination__link hs-pagination__link--prev {{ "hs-pagination__link--text-and-icon" if show_next_and_previous_arrows and show_next_and_previous_labels }}"
+                href="{{ prev_page_link|escape_url }}"
+            >
+                {% if show_next_and_previous_arrows %}
+                {% icon "hs_previous_icon"
+                    extra_classes="hs-pagination__link-icon",
+                    name="angle-left",
+                    purpose="decorative",
+                    style="SOLID",
+                    unicode="f104" %}
+                {% endif %}
+                {% if show_next_and_previous_labels %}
+                <span class="hs-pagination__link-text hs-pagination__show-for-sr--mobile">
+                    Prev
+                </span>
+                {% endif %}
+            </a>
+            {% endif %}
+
+            {# Numbered pagination #}
+
+            {% if show_numbers %}
+
+            {% set current_page_count = total_page_count - current_page_num %}
+
+            {% set page_list = [ -2, -1, 0, 1, 2] %}
+
+            {% if current_page_count == 1 %}
+                {% set offset = -1 %}
+            {% elif current_page_count == 0 %}
+                {% set offset = -2 %}
+            {% elif current_page_num == 2 %}
+                {% set offset = 1 %}
+            {% elif current_page_num == 1 %}
+                {% set offset = 2 %}
+            {% else %}
+                {% set offset = 0 %}
+            {% endif %}
+
+            {% for page in page_list %}
+            {% set this_page = current_page_num + page + offset %}
+            {% if this_page > 0 and this_page <= total_page_count %}
+            {% set not_first_blog_page_link = blog_page_link(this_page) %}
+            {% set this_page_link = (this_page == 1) ? first_page_link : not_first_blog_page_link %}
+                <a
+                class="hs-pagination__link hs-pagination__link--number {{ "hs-pagination__link--active" if this_page == current_page_num }}"
+                aria-label="{{ module.default_text.go_to_page }}"
+                {{ "aria-current=\"true\"" if this_page == current_page_num }}
+                href="{{ this_page_link|escape_url }}"
+                >
+                    {{ this_page|escape_html }}
+                </a>
+            {% endif %}
+            {% endfor %}
+
+            {% endif %}
+
+            {# Next page link #}
+
+            {% if next_page_num and (show_next_and_previous_arrows or show_next_and_previous_labels) %}
+            <a
+                class="hs-pagination__link hs-pagination__link--next {{ "hs-pagination__link--text-and-icon" if show_next_and_previous_arrows and show_next_and_previous_labels }}"
+                href="{{ blog_page_link(current_page_num + 1)|escape_url }}"
+            >
+                {% if show_next_and_previous_labels %}
+                <span class="hs-pagination__link-text hs-pagination__show-for-sr--mobile">
+                    Next
+                </span>
+                {% endif %}
+                {% if show_next_and_previous_arrows %}
+                {% icon "hs_next_icon"
+                    extra_classes="hs-pagination__link-icon",
+                    name="angle-right",
+                    purpose="decorative",
+                    style="SOLID",
+                    unicode="f105" %}
+                {% endif %}
+            </a>
+            {% endif %}
+
+            {# Last page link #}
+
+            {% if next_page_num and (show_first_and_last_arrows or show_first_and_last_labels) %}
+            <a
+                class="hs-pagination__link hs-pagination__link--last {{ "hs-pagination__link--text-and-icon" if show_first_and_last_arrows and show_first_and_last_labels }}"
+                href="{{ blog_page_link(total_page_count)|escape_url }}"
+            >
+                {% if show_first_and_last_labels %}
+                <span class="hs-pagination__link-text hs-pagination__show-for-sr--mobile">
+                    Last
+                </span>
+                {% endif %}
+                {% if show_first_and_last_arrows %}
+                {% icon "hs_last_icon"
+                    extra_classes="hs-pagination__link-icon",
+                    name="angle-double-right",
+                    purpose="decorative",
+                    style="SOLID",
+                    unicode="f101" %}
+                {% endif %}
+            </a>
+            {% endif %}
+        </nav>
+        {% endif %}
+
+
+
+
+    </div>
+</div>
