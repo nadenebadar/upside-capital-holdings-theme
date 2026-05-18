@@ -1,0 +1,105 @@
+[ {
+  "id" : "eb02bf2f-e5e7-0de0-ca37-de1959016684",
+  "name" : "portfolios",
+  "label" : "Portfolios",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : "98619914-301c-8930-e2dd-24deaf3f6860",
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "98619914-301c-8930-e2dd-24deaf3f6860",
+    "name" : "portfolio_name",
+    "label" : "Name",
+    "required" : false,
+    "locked" : false,
+    "allow_new_line" : false,
+    "type" : "text",
+    "display_width" : null
+  }, {
+    "id" : "4b1a055b-7eb8-54ac-a927-8b387d327150",
+    "name" : "location",
+    "label" : "Location",
+    "required" : false,
+    "locked" : false,
+    "allow_new_line" : false,
+    "type" : "text",
+    "display_width" : null
+  }, {
+    "id" : "50da17ff-d50a-bb50-5079-fc0fd570e91a",
+    "name" : "property_type",
+    "label" : "Property Type",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "Residential", "Residential" ], [ "Apartment", "Apartment" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "display_width" : null
+  }, {
+    "id" : "76c79295-9fab-778b-0593-cc53b61d0c9c",
+    "name" : "revenue_purchase",
+    "label" : "Revenue Purchase",
+    "required" : false,
+    "locked" : false,
+    "display" : "text",
+    "step" : 1,
+    "type" : "number",
+    "display_width" : null
+  }, {
+    "id" : "8c513236-ec73-e8f0-e408-019c9a35072b",
+    "name" : "purchase_date",
+    "label" : "Purchase Date",
+    "required" : false,
+    "locked" : false,
+    "type" : "date",
+    "display_width" : null
+  }, {
+    "id" : "5fe63956-5d39-bbd2-dee6-a3d1c1290c2c",
+    "name" : "link_field",
+    "label" : "Link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER", "PAYMENT" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "display_width" : null,
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "1d455ab4-6824-6883-293a-db990941d9b7",
+    "name" : "image_field",
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : [ ]
+} ]

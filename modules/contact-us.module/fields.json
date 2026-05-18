@@ -1,0 +1,380 @@
+[ {
+  "id" : "4c0e9970-41bf-5511-f38d-7a19c93f1fcb",
+  "name" : "style",
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "a7bcf196-2ad7-832f-9a74-897a7283dee0",
+    "name" : "padding_top",
+    "label" : "Padding Top",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "pt-reg", "Regular" ], [ "pt-lg", "Large" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "display_width" : null,
+    "default" : "pt-lg"
+  }, {
+    "id" : "d9981fb6-9b7a-0c04-710b-f0c87b1380fd",
+    "name" : "padding_bottom",
+    "label" : "Padding Bottom",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "pb-reg", "Regular" ], [ "pb-lg", "Large" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "display_width" : null,
+    "default" : "pb-reg"
+  }, {
+    "id" : "b4fba23f-c5d2-0442-62e5-ccd97a4e4bb4",
+    "name" : "background_color",
+    "label" : "Background Color",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "p", "Primary" ], [ "s", "Secondary" ], [ "t", "Tertiary" ], [ "n", "Neutral" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "display_width" : null,
+    "default" : "n"
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "padding_top" : "pt-lg",
+    "padding_bottom" : "pb-reg",
+    "background_color" : "n"
+  }
+}, {
+  "id" : "932378f3-e479-85c5-ca51-9f01a62bcae2",
+  "name" : "heading",
+  "label" : "Heading",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "Acquisitions & Inquiries"
+}, {
+  "id" : "7bf1dda1-217c-e4f5-65a5-b03b218bd04a",
+  "name" : "copy",
+  "label" : "Copy",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "Leveraging significant discretionary capital to acquire high-conviction real estate assets across North American gateway markets."
+}, {
+  "id" : "af447bc8-afcc-bd82-12eb-6a69000f7817",
+  "name" : "submit_opportunities",
+  "label" : "Submit Opportunities",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "43cf639e-8580-2273-df13-fe619e150c3a",
+    "name" : "tag",
+    "label" : "Tag",
+    "required" : false,
+    "locked" : false,
+    "allow_new_line" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "Submit Opportunities"
+  }, {
+    "id" : "b99c90fb-0a99-6e6b-c01a-d3007b4a31ed",
+    "name" : "title",
+    "label" : "Title",
+    "required" : false,
+    "locked" : false,
+    "allow_new_line" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "Submit Opportunities"
+  }, {
+    "id" : "01a67092-05a1-b854-df38-7ce2c4fd8a75",
+    "name" : "description",
+    "label" : "Description",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null,
+    "default" : "<p>Direct channel for principals and verified brokers to submit off-market multifamily and industrial opportunities. Minimum deal size: $25M.</p>"
+  }, {
+    "id" : "43a18dbe-926e-630c-874d-3d66cc9136f1",
+    "name" : "cta",
+    "label" : "CTA",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "2f0743cc-2af7-3ecb-8b61-4e9d5772a415",
+      "name" : "text_field",
+      "label" : "Text",
+      "required" : false,
+      "locked" : false,
+      "allow_new_line" : false,
+      "type" : "text",
+      "display_width" : null
+    }, {
+      "id" : "059b0471-39e7-6dda-4322-0ef84f1da664",
+      "name" : "link_field",
+      "label" : "Link",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER", "PAYMENT" ],
+      "show_advanced_rel_options" : false,
+      "type" : "link",
+      "display_width" : null,
+      "default" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "link_field" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "tag" : "Submit Opportunities",
+    "title" : "Submit Opportunities",
+    "description" : "<p>Direct channel for principals and verified brokers to submit off-market multifamily and industrial opportunities. Minimum deal size: $25M.</p>",
+    "cta" : {
+      "link_field" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }
+  }
+}, {
+  "id" : "91a642f0-9639-49bc-1260-0f08628b7877",
+  "name" : "other_contacts",
+  "label" : "Other Contacts",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 2
+  },
+  "children" : [ {
+    "id" : "b13ba208-c0cc-d0c2-fa0e-dc41fd20aa74",
+    "name" : "title",
+    "label" : "Title",
+    "required" : false,
+    "locked" : false,
+    "allow_new_line" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "Investor Relations"
+  }, {
+    "id" : "88a69441-21cd-9008-92fd-e5662879f5de",
+    "name" : "short_description",
+    "label" : "Short Description",
+    "required" : false,
+    "locked" : false,
+    "allow_new_line" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "LP & Institutional Inquiries"
+  }, {
+    "id" : "0461c181-862c-e973-fb6b-11e559083c9f",
+    "name" : "email",
+    "label" : "Email",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EMAIL_ADDRESS" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "display_width" : null,
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "href" : "ir@upsidecapitalholdings.com",
+        "type" : "EMAIL_ADDRESS"
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : [ {
+    "title" : "Investor Relations",
+    "short_description" : "LP & Institutional Inquiries",
+    "email" : {
+      "url" : {
+        "content_id" : null,
+        "href" : "ir@upsidecapitalholdings.com",
+        "type" : "EMAIL_ADDRESS"
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "title" : "Investor Relations",
+    "short_description" : "LP & Institutional Inquiries",
+    "email" : {
+      "url" : {
+        "content_id" : null,
+        "href" : "ir@upsidecapitalholdings.com",
+        "type" : "EMAIL_ADDRESS"
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  } ]
+}, {
+  "id" : "aa0fd332-a2e8-93b7-da91-d02e805b1d2e",
+  "name" : "locations",
+  "label" : "Locations",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : "e39c3302-2798-be13-9410-49dd4bce6c08",
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "e39c3302-2798-be13-9410-49dd4bce6c08",
+    "name" : "location",
+    "label" : "Location",
+    "required" : false,
+    "locked" : false,
+    "allow_new_line" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "Los Angeles"
+  }, {
+    "id" : "26829a55-730d-3295-6985-56261bc3e662",
+    "name" : "tag",
+    "label" : "Tag",
+    "required" : false,
+    "locked" : false,
+    "allow_new_line" : false,
+    "type" : "text",
+    "display_width" : null
+  }, {
+    "id" : "8160b3f6-f044-8333-66d2-d41c6103aa30",
+    "name" : "address",
+    "label" : "Address",
+    "required" : false,
+    "locked" : false,
+    "allow_new_line" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "2100 Ross Avenue, Suite 1200<br>Dallas, TX 75201"
+  }, {
+    "id" : "393b254f-7bb6-7f35-fc52-99b84dca706d",
+    "name" : "image_field",
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : [ ]
+}, {
+  "id" : "d6f23d66-c2d5-3f26-adcd-0e5692b46e8a",
+  "name" : "contact_form",
+  "label" : "Contact Form",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "add3b75e-a6f3-f37e-41fb-be77597427aa",
+    "name" : "title",
+    "label" : "Title",
+    "required" : false,
+    "locked" : false,
+    "allow_new_line" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "Structured Inquiry"
+  }, {
+    "id" : "57834669-1b69-35d4-8c3d-084696a405a9",
+    "name" : "form_field",
+    "label" : "Form",
+    "required" : false,
+    "locked" : false,
+    "embed_versions" : [ "v2", "v4" ],
+    "type" : "form",
+    "display_width" : null,
+    "default" : {
+      "form_id" : "b6989e69-a4ea-46fb-aa11-91ac2e56863d",
+      "response_type" : "inline",
+      "message" : "Thanks for submitting the form.",
+      "form_type" : "HUBSPOT"
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "title" : "Structured Inquiry",
+    "form_field" : {
+      "form_id" : "b6989e69-a4ea-46fb-aa11-91ac2e56863d",
+      "response_type" : "inline",
+      "message" : "Thanks for submitting the form.",
+      "form_type" : "HUBSPOT"
+    }
+  }
+} ]

@@ -1,0 +1,128 @@
+<div class="contact-us bg-color-{{ module.style.background_color }} {{ module.style.padding_top }} {{ module.style.padding_bottom }}">
+    <div class="container">
+        <div class="contact-us--intro">
+            <h1 class="h2 mb-8 font-color-p">
+                {{ module.heading }}
+            </h1>
+            <div class="font-color-{{ copyColor }} h5 contact-us--copy mb-12">
+            {{ module.copy }}
+            </div>            
+        </div>
+        <div class="row justify-content-between">
+            <div class="col-lg-5">
+                <div class="contact-us--so bg-color-p">
+                    <div class="tag font-color-s mb-4">
+                        {{ module.submit_opportunities.tag }}
+                    </div>
+                    <h2 class="title font-color-white h4">
+                        {{ module.submit_opportunities.title }}
+                    </h2>
+                    <div class="copy font-color-w-grey h6">
+                        {{ module.submit_opportunities.description }}
+                    </div>
+                    {% if module.submit_opportunities.cta.text_field %}
+                        {% set href = module.submit_opportunities.cta.link_field.url.href %}
+                        {% if module.submit_opportunities.cta.link_field.url.type is equalto "EMAIL_ADDRESS" %}
+                        {% set href = "mailto:" + href %}
+                        {% elif module.submit_opportunities.cta.link_field.url.type is equalto "PHONE_NUMBER" %}
+                        {% set href = "tel:" + href %}
+                        {% endif %}
+                        <a
+                        {% if module.submit_opportunities.cta.link_field.url.type is equalto "CALL_TO_ACTION"  %}
+                            href="{{ href }}" {# The href here is not escaped as it is not editable and functions as a JavaScript call to the associated CTA #}
+                        {% else %}
+                            href="{{ href|escape_url }}"
+                        {% endif %}
+                        {% if module.submit_opportunities.cta.link_field.open_in_new_tab %}
+                            target="_blank"
+                        {% endif %}
+                        {% if module.submit_opportunities.cta.link_field.rel %}
+                            rel="{{ module.submit_opportunities.cta.link_field.rel|escape_attr }}"
+                        {% endif %}
+                        class="button--link"
+                        >
+                        {{ module.submit_opportunities.cta.text_field }}
+                        <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M566.6 342.6C579.1 330.1 579.1 309.8 566.6 297.3L406.6 137.3C394.1 124.8 373.8 124.8 361.3 137.3C348.8 149.8 348.8 170.1 361.3 182.6L466.7 288L96 288C78.3 288 64 302.3 64 320C64 337.7 78.3 352 96 352L466.7 352L361.3 457.4C348.8 469.9 348.8 490.2 361.3 502.7C373.8 515.2 394.1 515.2 406.6 502.7L566.6 342.7z"/></svg></span>
+                        </a>
+                    {% endif %}
+                </div>
+                
+                <div class="row mt-6">
+                {% for item in module.other_contacts %}
+                    
+                    <div class="col-md-6 d-flex flex-column">
+                        <div class="contact-us--others bg-color-n-white">
+                            <h3 class="h5 font-color-black mb-4">
+                                {{ item.title }}
+                            </h3>
+                            <div class="mb-6">
+                            {{ item.short_description }}
+                            </div>
+                            {% set href = item.email.url.href %}
+                            {% if item.email.url.type is equalto "EMAIL_ADDRESS" %}
+                            {% set href = "mailto:" + href %}
+                            {% elif item.email.url.type is equalto "PHONE_NUMBER" %}
+                            {% set href = "tel:" + href %}
+                            {% endif %}
+                            <a
+                            {% if item.email.url.type is equalto "CALL_TO_ACTION"  %}
+                                href="{{ href }}" {# The href here is not escaped as it is not editable and functions as a JavaScript call to the associated CTA #}
+                            {% else %}
+                                href="{{ href|escape_url }}"
+                            {% endif %}
+                            {% if item.email.open_in_new_tab %}
+                                target="_blank"
+                            {% endif %}
+                            {% if item.email.rel %}
+                                rel="{{ item.email.rel|escape_attr }}"
+                            {% endif %}
+                            class="button--link"
+                            >
+                            {{ item.email.url.href }}
+                            </a>
+                        </div>                        
+                    </div>
+                {% endfor %}
+                </div>
+
+                {# Locations #}
+                <h3 class="font-color-p mt-12 mb-0">
+                    Office Locations
+                </h3>
+                <div class="row">
+                    {% for item in module.locations %}
+
+                        <div class="col-lg-6 mt-6 d-flex flex-column">
+                            <div class="location">
+                                {% if item.tag %}
+                                <div class="tag">
+                                    {{ item.tag }}
+                                </div>
+                                {% endif %}
+                                <h3 class="font-color-p mb-4 h4">
+                                    {{ item.location }}
+                                </h3>
+                                <div class="address">
+                                    {{ item.address }}
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="col-lg-7 d-flex flex-column">
+                <div class="contact-us--form bg-color-n-white">
+                    {% form
+                        form_to_use="{{ module.contact_form.form_field.form_id }}"
+                        response_response_type="{{ module.contact_form.form_field.response_type }}"
+                        response_message="{{ module.contact_form.form_field.message }}"
+                        response_redirect_id="{{ module.contact_form.form_field.redirect_id }}"
+                        response_redirect_url="{{module.contact_form.form_field.redirect_url}}"
+                        gotowebinar_webinar_key="{{ module.contact_form.form_field.gotowebinar_webinar_key }}"
+                        title="{{ module.contact_form.title }}"
+                    %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

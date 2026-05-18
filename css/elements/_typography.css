@@ -30,7 +30,6 @@ html[lang^="ko"] body {
 /* Paragraphs */
 
 p {
-  font-size: 1rem;
   margin: 0 0 1.4rem;
 }
 
@@ -125,6 +124,9 @@ img {
 }
 .font-color-w-grey{
   color: var(--color-w-grey);
+}
+.font-color-neutral{
+  color: var(--color-n);
 }
 
 
