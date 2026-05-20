@@ -62,22 +62,22 @@
 .portfolio-listing .portfolio-listing--item .location svg {
     width: 14px;
 }
-.portfolio-listing--info {
+.portfolio-listing .portfolio-listing--info {
     padding: var(--space-8) var(--space-2);
 }
-.portfolio-listing--info .title {
+.portfolio-listing .portfolio-listing--info .title {
     letter-spacing: 0.1em;
     font-size: 10px;
     text-transform: uppercase;
 }
-.portfolio-listing--info .value {
+.portfolio-listing .portfolio-listing--info .value {
     font-size: 0.875rem;
     line-height: 1.25rem;
     font-weight: 700;
     font-family: Manrope;
     color: var(--color-p);
 }
-.portfolio-listing--info  .link {
+.portfolio-listing .portfolio-listing--info  .link {
     margin-top: var(--space-8);
     border-top: 1px solid rgb(195 199 206 / 0.2);
     padding-top: var(--space-4);
@@ -87,42 +87,90 @@
     align-items: center;
     justify-content: space-between;
 }
-.portfolio-listing--info .link svg,
-#portfolio-listing--loadmore button svg
+.portfolio-listing .portfolio-listing--info .link svg,
+.portfolio-listing #portfolio-listing--loadmore button svg
  {
     width: 24px;
     color: var(--color-p);
     transition: all .3s;
 }
-.portfolio-listing--col > a:hover .portfolio-listing--info .link svg{
+.portfolio-listing .portfolio-listing--col > a:hover .portfolio-listing--info .link svg{
     margin-right: -5px;
 }
-#portfolio-listing--loadmore {
+.portfolio-listing #portfolio-listing--loadmore {
     text-align: center;
 }
-#portfolio-listing--loadmore button {
+.portfolio-listing #portfolio-listing--loadmore button {
     background: transparent;
     color: var(--color-p);
     padding: 0 30px 0 0;
     position: relative;
 }
-#portfolio-listing--loadmore button:hover{
+.portfolio-listing #portfolio-listing--loadmore button:hover{
     color: var(--color-s);
 }
-#portfolio-listing--loadmore button svg {
+.portfolio-listing #portfolio-listing--loadmore button svg {
     position: absolute;
     right: 0;
     top: 50%;
     transform: translateY(-50%);
 }
-#portfolio-listing--loadmore button:hover svg{
+.portfolio-listing #portfolio-listing--loadmore button:hover svg{
     top: calc(50% + 5px);
     color: var(--color-s);
 }
-.portfolio-listing--number {
+.portfolio-listing .portfolio-listing--number {
     text-align: center;
     font-family: 'Manrope', sans-serif;
     font-size: 0.875rem;
     line-height: 1.25rem;
     font-weight: 500;
+}
+.portfolio-listing .portfolio-listing--filters #type {
+    display: flex;
+    gap: var(--space-8);
+    list-style: none;
+    margin: 0;
+    padding: var(--space-4) 0;
+}
+.portfolio-listing .portfolio-listing--filters #type li a {
+    color: var(--color-grey);
+    text-decoration: none;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-family: 'Manrope';
+    padding-bottom: var(--space-1);
+    font-weight: 500;
+}
+.portfolio-listing .portfolio-listing--filters #type li a:hover{
+    color: var(--color-p);
+}
+.portfolio-listing .portfolio-listing--filters #type li a.active{
+    color: var(--color-p);
+    border-bottom: 2px solid var(--color-p);
+    font-weight: 700;
+}
+.portfolio-listing .portfolio-listing--sort {
+    display: flex;
+    gap: var(--space-4);
+    flex-wrap: wrap;
+    align-items: center;
+}
+.portfolio-listing .portfolio-listing--sort label{
+    font-size: 0.75rem;
+    line-height: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+.portfolio-listing .portfolio-listing--sort select{
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 700;
+    font-family: 'Manrope';    
+    padding: 0.5rem 1rem 0.5rem 0.5rem;
+    border: 0;
+    background: transparent;
+    border: 1px solid var(--color-w-grey);
+    border-radius: 5px;
 }
