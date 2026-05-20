@@ -1,0 +1,38 @@
+{% require_css %}
+    <style>
+    {% scope_css %}
+    .portfolio-banner--bg{
+        background-image: url({{ module.image_field.src }});
+    }
+    {% end_scope_css %}
+    </style>
+{% end_require_css %}
+<div class="portfolio-banner d-flex flex-column justify-content-center pt-lg pb-lg bg-color-p" >
+    <div class="portfolio-banner--bg"></div>
+    <div class="portfolio-banner--gradient"></div>
+    <div class="container">
+        <div class="portfolio-banner--content">
+            <div class="row">
+                <div class="col-sm-auto">
+                    {% if module.type %}
+                        <div class="portfolio-banner--tag mb-6 bg-color-s font-color-white">
+                            {{ module.type }}
+                        </div>
+                    {% endif %}
+                </div>
+                <div class="col-sm-auto">
+                    {% if module.location %}
+                        <div class="portfolio-banner--tag mb-6 font-color-neutral">
+                            {{ module.location }}
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+            
+            <h1 class="mb-8 {{ headingSize }} font-color-white">
+                {{ module.title }}
+            </h1>     
+            
+        </div>
+    </div>
+</div>

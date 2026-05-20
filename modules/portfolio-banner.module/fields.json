@@ -1,0 +1,52 @@
+[ {
+  "id" : "ae7efcee-edb5-03fb-c325-2cc5082700de",
+  "name" : "title",
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "The Milo"
+}, {
+  "id" : "2791f66a-7338-da43-ce13-8be2b68394ac",
+  "name" : "type",
+  "label" : "Type",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "Apartment"
+}, {
+  "id" : "a2539871-fa4e-21bd-4844-9e8431e6c7d7",
+  "name" : "location",
+  "label" : "Location",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "Dallas, Texas"
+}, {
+  "id" : "f7206a95-a54f-08a6-75eb-667240d38086",
+  "name" : "image_field",
+  "label" : "Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "display_width" : null,
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://21306361.fs1.hubspotusercontent-na2.net/hubfs/21306361/Milo-Portfolio-Cover.jpg",
+    "alt" : "Milo-Portfolio-Cover",
+    "loading" : "lazy",
+    "width" : 1200,
+    "height" : 800,
+    "max_width" : 1200,
+    "max_height" : 800
+  }
+} ]
