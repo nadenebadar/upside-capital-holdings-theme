@@ -1,0 +1,97 @@
+[ {
+  "id" : "df3f5004-e4e4-dbe1-4108-3a37a04c183a",
+  "name" : "heading",
+  "label" : "Heading",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "Amenities at The Milo"
+}, {
+  "id" : "88658496-48a1-ae48-01fe-8b1c75538b8a",
+  "name" : "cards",
+  "label" : "Cards",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : "352ee637-4e65-0904-3611-5d6507c159ec",
+    "default" : 3
+  },
+  "children" : [ {
+    "id" : "352ee637-4e65-0904-3611-5d6507c159ec",
+    "name" : "title",
+    "label" : "Title",
+    "required" : false,
+    "locked" : false,
+    "allow_new_line" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "Pool"
+  }, {
+    "id" : "8f039d8a-951a-02c8-3c74-32c0603cc108",
+    "name" : "image_field",
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://21306361.fs1.hubspotusercontent-na2.net/hubfs/21306361/The%20Milo%20Property/Pool.jpg",
+      "alt" : "Pool",
+      "loading" : "lazy",
+      "width" : 400,
+      "height" : 267,
+      "max_width" : 400,
+      "max_height" : 267
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : [ {
+    "title" : "Pool",
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://21306361.fs1.hubspotusercontent-na2.net/hubfs/21306361/The%20Milo%20Property/Pool.jpg",
+      "alt" : "Pool",
+      "loading" : "lazy",
+      "width" : 400,
+      "height" : 267,
+      "max_width" : 400,
+      "max_height" : 267
+    }
+  }, {
+    "title" : "Pool",
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://21306361.fs1.hubspotusercontent-na2.net/hubfs/21306361/The%20Milo%20Property/Pool.jpg",
+      "alt" : "Pool",
+      "loading" : "lazy",
+      "width" : 400,
+      "height" : 267,
+      "max_width" : 400,
+      "max_height" : 267
+    }
+  }, {
+    "title" : "Pool",
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://21306361.fs1.hubspotusercontent-na2.net/hubfs/21306361/The%20Milo%20Property/Pool.jpg",
+      "alt" : "Pool",
+      "loading" : "lazy",
+      "width" : 400,
+      "height" : 267,
+      "max_width" : 400,
+      "max_height" : 267
+    }
+  } ]
+} ]

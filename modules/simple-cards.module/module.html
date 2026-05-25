@@ -1,0 +1,34 @@
+<div class="simple-cards bg-color-p pt-reg pb-reg">
+    <div class="container">
+        <h2 class="h3 font-color-white mb-10">
+            {{ module.heading }}
+        </h2>
+        <div class="row">
+            {% for item in module.cards %}
+                <div class="col-md-4">
+                    <div class="simple-cards--item bg-color-n-white">
+                        <div class="simple-cards--img">
+                            <div class="image-cover">
+                                {% if item.image_field.src %}
+                                    {% set sizeAttrs = 'width="{{ item.image_field.width|escape_attr }}" height="{{ item.image_field.height|escape_attr }}"' %}
+                                    {% if item.image_field.size_type == 'auto' %}
+                                        {% set sizeAttrs = 'width="{{ item.image_field.width|escape_attr }}" height="{{ item.image_field.height|escape_attr }}" style="max-width: 100%; height: auto;"' %}
+                                    {% elif item.image_field.size_type == 'auto_custom_max' %}
+                                        {% set sizeAttrs = 'width="{{ item.image_field.max_width|escape_attr }}" height="{{ item.image_field.max_height|escape_attr }}" style="max-width: 100%; height: auto;"' %}
+                                    {% endif %}
+                                    {% set loadingAttr = item.image_field.loading != 'disabled' ? 'loading="{{ item.image_field.loading|escape_attr }}"' : '' %}
+                                    <img src="{{ item.image_field.src|escape_url }}" alt="{{ item.image_field.alt|escape_attr }}" {{ loadingAttr }}>
+                                {% endif %}
+                            </div>
+                        </div>
+                        <div class="simple-cards--info">
+                            <h3 class="h4 mb-0 font-color-p">
+                                {{ item.title }}
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div> 

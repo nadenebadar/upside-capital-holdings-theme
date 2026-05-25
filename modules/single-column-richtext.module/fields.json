@@ -1,0 +1,10 @@
+[ {
+  "id" : "7484e772-5cec-d1c5-8b5c-78d4997d7af9",
+  "name" : "richtext_field",
+  "label" : "Rich text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<p>Welcome to The Milo Apartments in the heart of Northwest Dallas, TX. Our apartment home community is conveniently located directly off Interstate 35 E and the Dallas North Tollway. With easy access to major transportation, like the Dallas Love Field Airport, there are no bounds to the fun and adventure waiting for you. Explore the city and downtown Dallas, visit nearby shops like Target, Walmart Supercenter, and Sam’s Club, or take a walk to Bachan Lake. With our proximity to noteworthy schools and employers, everything you need is within reach.</p>"
+} ]

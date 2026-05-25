@@ -148,3 +148,7 @@ img {
 .font-black {  
   font-weight: 900;
 }
+
+.text-center{
+  text-align: center;
+}

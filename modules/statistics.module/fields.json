@@ -69,7 +69,16 @@
     "sorting_label_field" : "db44bc81-9345-5216-bfda-2904f74a4bb4",
     "default" : 4
   },
-  "children" : [ {
+  "children" : [ 
+    {
+    "type": "boolean",
+    "id": "895bd38f-ce11-875f-b066-1bfb69a0ae95",
+    "default": false,
+    "display": "checkbox",
+    "label": "Use Date",
+    "name": "use_date"
+   },
+   {
     "id" : "c57833f7-c327-97e9-e32a-988563d24ff6",
     "name" : "prefix",
     "label" : "Prefix",
@@ -78,7 +87,12 @@
     "allow_new_line" : false,
     "type" : "text",
     "display_width" : null,
-    "default" : "$"
+    "default" : "$",
+    "visibility": {
+      "controlling_field_path": "statistics.use_date",
+      "operator": "EQUAL",
+      "controlling_value_regex": "false"
+    }
   }, {
     "id" : "a4f5f789-38e2-88eb-a204-cad8897cbf71",
     "name" : "number_field",
@@ -89,7 +103,12 @@
     "step" : 1,
     "type" : "number",
     "display_width" : null,
-    "default" : 2.4
+    "default" : 2.4,
+    "visibility": {
+     "controlling_field_path": "statistics.use_date",
+     "operator": "EQUAL",
+     "controlling_value_regex": "false"
+    }
   }, {
     "id" : "ed90c122-0801-d36f-477d-9c1aa760e448",
     "name" : "suffix",
@@ -99,8 +118,25 @@
     "allow_new_line" : false,
     "type" : "text",
     "display_width" : null,
-    "default" : "B"
-  }, {
+    "default" : "B",
+    "visibility": {
+     "controlling_field_path": "statistics.use_date",
+     "operator": "EQUAL",
+     "controlling_value_regex": "false"
+    }
+  },
+  {
+    "type": "date",
+    "id": "91677b10-4646-8a4b-d028-dbc0b33e7f0d",
+    "label": "Date",
+    "name": "date_field",
+    "visibility": {
+     "controlling_field_path": "statistics.use_date",
+     "operator": "EQUAL",
+     "controlling_value_regex": "true"
+    }
+   },
+   {
     "id" : "db44bc81-9345-5216-bfda-2904f74a4bb4",
     "name" : "title",
     "label" : "Title",

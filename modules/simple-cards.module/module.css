@@ -1,0 +1,19 @@
+.simple-cards .simple-cards--img .image-cover {
+    padding-top: 66.75%;
+    position: relative;
+    overflow: hidden;
+}
+.simple-cards .simple-cards--img .image-cover img{
+    height: 100%;
+    left: 50%;
+    object-fit: cover;
+    object-position: top;
+    position: absolute;
+    top: 0;
+    transform: translateX(-50%);
+    transition-duration: .7s;
+    width: 110%;
+}
+.simple-cards .simple-cards--info {
+    padding: var(--space-5);
+}

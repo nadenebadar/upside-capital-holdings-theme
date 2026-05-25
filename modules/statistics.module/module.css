@@ -1,3 +1,6 @@
+.statistics-mod .grid{
+    place-items: center;
+}
 .statistics--title {
     text-transform: uppercase;
 }

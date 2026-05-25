@@ -9,12 +9,19 @@
 {% endif %}
 <div class="statistics-mod bg-color-{{ module.style.background_color }} {{ module.style.padding_top }} {{ module.style.padding_bottom }}">
     <div class="container">
-        <div class="grid grid--4">
+        <div class="grid grid--{{ module.statistics|length }}">
             {% for item in module.statistics %}
                 <div class="statistics--item">
+                    {% if item.use_date %}
+                    <div class="statistics--date h2 font-color-{{ numColor }}">
+                        {{ item.date_field|format_datetime('MM/dd/yyyy') }}
+                    </div>
+                    {% else %}
                     <div class="statistics--number h2 font-color-{{ numColor }}">
                         {{ item.prefix }}<span>{{ item.number_field }}</span>{{ item.suffix }}
                     </div>
+                    {% endif %} 
+                    
                     <div class="statistics--title h6 font-color-{{ titleColor }} mt-2">
                         {{ item.title }}
                     </div>
