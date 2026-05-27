@@ -1,0 +1,52 @@
+<div class="two-column-images pt-reg pb-reg">
+    {% if module.heading %}
+        <div class="container">
+            <h2 class="h3 font-color-p mb-10 text-center">
+                {{ module.heading }}
+            </h2>
+        </div>
+    {% endif %}
+    {% for item in module.rows %}
+    <div class="two-column-images--row">
+        <div class="two-column-images--col">
+            <div class="image-cover">
+                {% if item.first_column.image.src %}
+                    {% set sizeAttrs = 'width="{{ item.first_column.image.width|escape_attr }}" height="{{ item.first_column.image.height|escape_attr }}"' %}
+                    {% if item.first_column.image.size_type == 'auto' %}
+                        {% set sizeAttrs = 'width="{{ item.first_column.image.width|escape_attr }}" height="{{ item.first_column.image.height|escape_attr }}" style="max-width: 100%; height: auto;"' %}
+                    {% elif item.first_column.image.size_type == 'auto_custom_max' %}
+                        {% set sizeAttrs = 'width="{{ item.first_column.image.max_width|escape_attr }}" height="{{ item.first_column.image.max_height|escape_attr }}" style="max-width: 100%; height: auto;"' %}
+                    {% endif %}
+                    {% set loadingAttr = item.first_column.image.loading != 'disabled' ? 'loading="{{ item.first_column.image.loading|escape_attr }}"' : '' %}
+                    <img src="{{ item.first_column.image.src|escape_url }}" alt="{{ item.first_column.image.alt|escape_attr }}" {{ loadingAttr }}>
+                {% endif %}
+                {% if item.first_column.title %}
+                <div class="two-column-images--title bg-color-p font-color-white">
+                    {{ item.first_column.title }}
+                </div>
+                {% endif %}
+            </div>
+        </div>
+        <div class="two-column-images--col">
+            <div class="image-cover">
+                {% if item.second_column.image.src %}
+                    {% set sizeAttrs = 'width="{{ item.second_column.image.width|escape_attr }}" height="{{ item.second_column.image.height|escape_attr }}"' %}
+                    {% if item.second_column.image.size_type == 'auto' %}
+                        {% set sizeAttrs = 'width="{{ item.second_column.image.width|escape_attr }}" height="{{ item.second_column.image.height|escape_attr }}" style="max-width: 100%; height: auto;"' %}
+                    {% elif item.second_column.image.size_type == 'auto_custom_max' %}
+                        {% set sizeAttrs = 'width="{{ item.second_column.image.max_width|escape_attr }}" height="{{ item.second_column.image.max_height|escape_attr }}" style="max-width: 100%; height: auto;"' %}
+                    {% endif %}
+                    {% set loadingAttr = item.second_column.image.loading != 'disabled' ? 'loading="{{ item.second_column.image.loading|escape_attr }}"' : '' %}
+                    <img src="{{ item.second_column.image.src|escape_url }}" alt="{{ item.second_column.image.alt|escape_attr }}" {{ loadingAttr }}>
+                {% endif %}
+                {% if item.second_column.title %}
+                <div class="two-column-images--title bg-color-s font-color-white">
+                    {{ item.second_column.title }}
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+       
+    {% endfor %}
+</div>

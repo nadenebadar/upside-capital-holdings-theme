@@ -1,0 +1,142 @@
+[ {
+  "id" : "fe767c39-635c-ec9a-9302-0da1e95a8d23",
+  "name" : "heading",
+  "label" : "Heading",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "See Our Before And After Transformation"
+}, {
+  "id" : "9e2a65cc-cfd7-dcae-0723-e19284950274",
+  "name" : "rows",
+  "label" : "Rows",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 1
+  },
+  "children" : [ {
+    "id" : "7f237888-70db-9df4-a7fd-f214b89674e8",
+    "name" : "first_column",
+    "label" : "First Column",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "cadacd1f-18c2-c084-6207-0dba35dc2693",
+      "name" : "image",
+      "label" : "Image",
+      "required" : false,
+      "locked" : false,
+      "responsive" : true,
+      "resizable" : true,
+      "show_loading" : false,
+      "type" : "image",
+      "display_width" : null,
+      "default" : {
+        "size_type" : "auto",
+        "src" : "https://21306361.fs1.hubspotusercontent-na2.net/hubfs/21306361/The%20Milo%20Property/Milo-Before-1-1024x731.jpg",
+        "alt" : "Milo-Before-1-1024x731",
+        "loading" : "lazy",
+        "width" : 1024,
+        "height" : 731,
+        "max_width" : 1024,
+        "max_height" : 731
+      }
+    }, {
+      "id" : "e32d086c-d4db-0c66-ecaa-4f0aa328c5c1",
+      "name" : "title",
+      "label" : "Title",
+      "required" : false,
+      "locked" : false,
+      "allow_new_line" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "Before"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "image" : {
+        "size_type" : "auto",
+        "src" : "https://21306361.fs1.hubspotusercontent-na2.net/hubfs/21306361/The%20Milo%20Property/Milo-Before-1-1024x731.jpg",
+        "alt" : "Milo-Before-1-1024x731",
+        "loading" : "lazy",
+        "width" : 1024,
+        "height" : 731,
+        "max_width" : 1024,
+        "max_height" : 731
+      },
+      "title" : "Before"
+    }
+  }, {
+    "id" : "a4e4d477-242a-7283-8711-3a6734534471",
+    "name" : "second_column",
+    "label" : "Second Column",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "4c98418a-e134-c261-fdff-cae6ce78d61c",
+      "name" : "image",
+      "label" : "Image",
+      "required" : false,
+      "locked" : false,
+      "responsive" : true,
+      "resizable" : true,
+      "show_loading" : false,
+      "type" : "image",
+      "display_width" : null,
+      "default" : {
+        "size_type" : "auto",
+        "src" : "https://21306361.fs1.hubspotusercontent-na2.net/hubfs/21306361/The%20Milo%20Property/Milo-After-1-1024x731.jpg",
+        "alt" : "Milo-After-1-1024x731",
+        "loading" : "lazy",
+        "width" : 1024,
+        "height" : 731,
+        "max_width" : 1024,
+        "max_height" : 731
+      }
+    }, {
+      "id" : "4b55c297-1d2c-136b-4315-0ea7318ccab8",
+      "name" : "title",
+      "label" : "Title",
+      "required" : false,
+      "locked" : false,
+      "allow_new_line" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "After"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "image" : {
+        "size_type" : "auto",
+        "src" : "https://21306361.fs1.hubspotusercontent-na2.net/hubfs/21306361/The%20Milo%20Property/Milo-After-1-1024x731.jpg",
+        "alt" : "Milo-After-1-1024x731",
+        "loading" : "lazy",
+        "width" : 1024,
+        "height" : 731,
+        "max_width" : 1024,
+        "max_height" : 731
+      },
+      "title" : "After"
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : [ ]
+} ]
