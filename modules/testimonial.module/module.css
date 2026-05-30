@@ -1,0 +1,12 @@
+.testimonial-mod .testimonial--text{
+    font-size: 3rem;
+    line-height: 1;
+    font-style: italic;
+}
+.testimonial-mod .testimonial-mod--content{
+    max-width: 56rem;
+    margin: 0 auto;
+}
+.testimonial-mod .testimonial-mod--icon svg {
+    width: 60px;
+}

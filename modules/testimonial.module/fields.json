@@ -1,0 +1,80 @@
+[ {
+  "id" : "4c0e9970-41bf-5511-f38d-7a19c93f1fcb",
+  "name" : "style",
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "b4fba23f-c5d2-0442-62e5-ccd97a4e4bb4",
+    "name" : "background_color",
+    "label" : "Background Color",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "p", "Primary" ], [ "s", "Secondary" ], [ "t", "Tertiary" ], [ "n", "Neutral" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "display_width" : null,
+    "default" : "n"
+  }, {
+    "id" : "a7bcf196-2ad7-832f-9a74-897a7283dee0",
+    "name" : "padding_top",
+    "label" : "Padding Top",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "pt-reg", "Regular" ], [ "pt-lg", "Large" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "display_width" : null,
+    "default" : "pt-reg"
+  }, {
+    "id" : "d9981fb6-9b7a-0c04-710b-f0c87b1380fd",
+    "name" : "padding_bottom",
+    "label" : "Padding Bottom",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "pb-reg", "Regular" ], [ "pb-lg", "Large" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "display_width" : null,
+    "default" : "pb-reg"
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "background_color" : "n",
+    "padding_top" : "pt-reg",
+    "padding_bottom" : "pb-reg"
+  }
+}, {
+  "id" : "222d0150-f7f7-1a35-860b-70e043a1b5ba",
+  "name" : "testimonial",
+  "label" : "Testimonial",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "“Love the management and the service. Highly recommend these apartments to anyone that’s looking for something affordable and community friendly!”"
+}, {
+  "id" : "34f85e26-ff99-9e80-5044-5a1b99c6a15f",
+  "name" : "testimonial_name",
+  "label" : "Name",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "Elaine T"
+} ]

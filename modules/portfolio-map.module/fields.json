@@ -1,0 +1,96 @@
+[ {
+  "id" : "4c0e9970-41bf-5511-f38d-7a19c93f1fcb",
+  "name" : "style",
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "b4fba23f-c5d2-0442-62e5-ccd97a4e4bb4",
+    "name" : "background_color",
+    "label" : "Background Color",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "p", "Primary" ], [ "s", "Secondary" ], [ "t", "Tertiary" ], [ "n", "Neutral" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "display_width" : null,
+    "default" : "n"
+  }, {
+    "id" : "a7bcf196-2ad7-832f-9a74-897a7283dee0",
+    "name" : "padding_top",
+    "label" : "Padding Top",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "pt-reg", "Regular" ], [ "pt-lg", "Large" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "display_width" : null,
+    "default" : "pt-reg"
+  }, {
+    "id" : "d9981fb6-9b7a-0c04-710b-f0c87b1380fd",
+    "name" : "padding_bottom",
+    "label" : "Padding Bottom",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "pb-reg", "Regular" ], [ "pb-lg", "Large" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "display_width" : null,
+    "default" : "pb-reg"
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "background_color" : "n",
+    "padding_top" : "pt-reg",
+    "padding_bottom" : "pb-reg"
+  }
+}, {
+  "id" : "222d0150-f7f7-1a35-860b-70e043a1b5ba",
+  "name" : "heading",
+  "label" : "Heading",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "Location"
+}, {
+  "id" : "ee499834-b3e3-d513-6ea1-5db8ab01e5c3",
+  "name" : "description",
+  "label" : "Description",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<p>Milo Apartments offer a serene retreat, nestled in a picturesque setting surrounded by lush greenery and tranquil landscapes. Experience the perfect blend of natural beauty and peaceful living away from the urban hustle.</p>"
+}, {
+  "id" : "43267caf-1c3d-0abc-1469-9bbe2954f788",
+  "name" : "embed_field",
+  "label" : "Embed",
+  "required" : false,
+  "locked" : false,
+  "supported_source_types" : [ "html" ],
+  "supported_oembed_types" : [ "photo", "video", "link", "rich" ],
+  "resizable" : true,
+  "show_preview" : true,
+  "supported_media_bridge_providers" : [ ],
+  "type" : "embed",
+  "display_width" : null,
+  "default" : {
+    "source_type" : "html",
+    "embed_html" : "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3351.4112708089415!2d-96.86762929999999!3d32.860836299999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864e9da4c9236a4b%3A0xc0cd17a112039180!2s9680%20Timberline%20Dr%2C%20Dallas%2C%20TX%2075220%2C%20USA!5e0!3m2!1sen!2sit!4v1780103697585!5m2!1sen!2sit\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+  }
+} ]

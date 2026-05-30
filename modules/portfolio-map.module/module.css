@@ -1,0 +1,14 @@
+.portfolio-map .portfolio-map--heading{
+    position: relative;
+    display: inline-block;
+    padding-bottom: var(--space-6);
+}
+.portfolio-map .portfolio-map--heading::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 4px;
+    width: 40%;
+    left: 0;
+    background: var(--color-s);
+}
